@@ -1,0 +1,92 @@
+$begin '$base_index$'
+  $begin 'properties'
+    all_levels=000000000000
+    time(year=000000002019, month=000000000011, day=000000000020, hour=000000000000, min=000000000007, sec=000000000046)
+    version=000000000000
+  $end 'properties'
+  $begin '$base_index$'
+    $index$(pos=000000000000, lin=000000000001, lvl=000000000000)
+  $end '$base_index$'
+$end '$base_index$'
+$begin 'SolutionBlock1'
+	ProductName=''
+	CircuitName='HFSSDesign1'
+	VersionID=79
+	PostProcess=false
+	LossLess=true
+	NextUniqueID=469
+	MoveBackwards=false
+	$begin 'VariationIDs'
+		Map(V='dip_length=\'2.13125mm\' dip_rad=\'0.045mm\' gap_src=\'0.0125mm\' lambda=\'9mm\' radiation_height=\'3.0375mm\' radiation_rad=\'2.295mm\' res_length=\'4.275mm\'', ID=425)
+		Map(V='dip_length=\'2.31671460791676mm\' dip_rad=\'0.0489045180614055mm\' gap_src=\'0.0125mm\' lambda=\'9.78090361228109mm\' radiation_height=\'3.30105496914487mm\' radiation_rad=\'2.49413042113168mm\' res_length=\'4.64592921583352mm\'', ID=431)
+		Map(V='dip_length=\'2.33765782810398mm\' dip_rad=\'0.0493454279600838mm\' gap_src=\'0.0125mm\' lambda=\'9.86908559201676mm\' radiation_height=\'3.33081638730566mm\' radiation_rad=\'2.51661682596427mm\' res_length=\'4.68781565620796mm\'', ID=428)
+		Map(V='dip_length=\'2.34511055959753mm\' dip_rad=\'0.0495023275704744mm\' gap_src=\'0.0125mm\' lambda=\'9.90046551409488mm\' radiation_height=\'3.34140711100702mm\' radiation_rad=\'2.52461870609419mm\' res_length=\'4.70272111919507mm\'', ID=429)
+		Map(V='dip_length=\'2.36365900357101mm\' dip_rad=\'0.0498928211278107mm\' gap_src=\'0.0125mm\' lambda=\'9.97856422556214mm\' radiation_height=\'3.36776542612722mm\' radiation_rad=\'2.54453387751835mm\' res_length=\'4.73981800714202mm\'', ID=433)
+		Map(V='dip_length=\'2.36620208762181mm\' dip_rad=\'0.0499463597394065mm\' gap_src=\'0.0125mm\' lambda=\'9.9892719478813mm\' radiation_height=\'3.37137928240994mm\' radiation_rad=\'2.54726434670973mm\' res_length=\'4.74490417524362mm\'', ID=430)
+		Map(V='dip_length=\'2.36628499535112mm\' dip_rad=\'0.0499481051652867mm\' gap_src=\'0.0125mm\' lambda=\'9.98962103305734mm\' radiation_height=\'3.37149709865685mm\' radiation_rad=\'2.54735336342962mm\' res_length=\'4.74506999070224mm\'', ID=437)
+		Map(V='dip_length=\'2.36794316619031mm\' dip_rad=\'0.0499830140250592mm\' gap_src=\'0.0125mm\' lambda=\'9.99660280501183mm\' radiation_height=\'3.37385344669149mm\' radiation_rad=\'2.54913371527802mm\' res_length=\'4.74838633238062mm\'', ID=439)
+		Map(V='dip_length=\'2.36808579151276mm\' dip_rad=\'0.0499860166634265mm\' gap_src=\'0.0125mm\' lambda=\'9.99720333268531mm\' radiation_height=\'3.37405612478129mm\' radiation_rad=\'2.54928684983475mm\' res_length=\'4.74867158302552mm\'', ID=438)
+		Map(V='dip_length=\'2.36874517167261mm\' dip_rad=\'0.0499998983510022mm\' gap_src=\'0.0125mm\' lambda=\'9.99997967020045mm\' radiation_height=\'3.37499313869265mm\' radiation_rad=\'2.54999481590111mm\' res_length=\'4.74999034334521mm\'', ID=432)
+		Map(V='dip_length=\'2.36875mm\' dip_rad=\'0.05mm\' gap_src=\'0.0125mm\' lambda=\'10mm\' radiation_height=\'3.375mm\' radiation_rad=\'2.55mm\' res_length=\'4.75mm\'', ID=59)
+		Map(V='dip_length=\'2.36876942326659mm\' dip_rad=\'0.0500004089108755mm\' gap_src=\'0.0125mm\' lambda=\'10.0000817821751mm\' radiation_height=\'3.3750276014841mm\' radiation_rad=\'2.55002085445465mm\' res_length=\'4.75003884653317mm\'', ID=441)
+		Map(V='dip_length=\'2.36885780894825mm\' dip_rad=\'0.0500022696620685mm\' gap_src=\'0.0125mm\' lambda=\'10.0004539324137mm\' radiation_height=\'3.37515320218962mm\' radiation_rad=\'2.55011575276549mm\' res_length=\'4.75021561789651mm\'', ID=440)
+		Map(V='dip_length=\'2.36954717715491mm\' dip_rad=\'0.0500167826769455mm\' gap_src=\'0.0125mm\' lambda=\'10.0033565353891mm\' radiation_height=\'3.37613283069382mm\' radiation_rad=\'2.55085591652422mm\' res_length=\'4.75159435430982mm\'', ID=436)
+		Map(V='dip_length=\'2.38995208762181mm\' dip_rad=\'0.0504463597394065mm\' gap_src=\'0.0125mm\' lambda=\'10.0892719478813mm\' radiation_height=\'3.40512928240994mm\' radiation_rad=\'2.57276434670973mm\' res_length=\'4.79240417524362mm\'', ID=435)
+		Map(V='dip_length=\'2.39238944040246mm\' dip_rad=\'0.0504976724295255mm\' gap_src=\'0.0125mm\' lambda=\'10.0995344859051mm\' radiation_height=\'3.40859288899297mm\' radiation_rad=\'2.5753812939058mm\' res_length=\'4.79727888080492mm\'', ID=424)
+		Map(V='dip_length=\'2.60370208762181mm\' dip_rad=\'0.0549463597394065mm\' gap_src=\'0.0125mm\' lambda=\'10.9892719478813mm\' radiation_height=\'3.70887928240994mm\' radiation_rad=\'2.80226434670973mm\' res_length=\'5.21990417524362mm\'', ID=434)
+	$end 'VariationIDs'
+	$begin 'LinkedDataList'
+	$end 'LinkedDataList'
+	$begin 'InitialMeshes'
+		M(VID=59, Ver=79, Dir='DV59_V79.imesh/')
+	$end 'InitialMeshes'
+	$begin 'LumpedPortDimensions'
+		DIMS(VID=59, Ver=79, D=2, D=1.25e-005, D=0.0001)
+		DIMS(VID=424, Ver=79, D=2, D=1.25e-005, D=0.000100995344859051)
+		DIMS(VID=425, Ver=79, D=2, D=1.25e-005, D=9.000000000000001e-005)
+		DIMS(VID=428, Ver=79, D=2, D=1.25e-005, D=9.869085592016759e-005)
+		DIMS(VID=429, Ver=79, D=2, D=1.25e-005, D=9.90046551409488e-005)
+		DIMS(VID=430, Ver=79, D=2, D=1.25e-005, D=9.989271947881298e-005)
+		DIMS(VID=431, Ver=79, D=2, D=1.25e-005, D=9.780903612281088e-005)
+		DIMS(VID=432, Ver=79, D=2, D=1.25e-005, D=9.999979670200447e-005)
+		DIMS(VID=433, Ver=79, D=2, D=1.25e-005, D=9.978564225562139e-005)
+		DIMS(VID=434, Ver=79, D=2, D=1.25e-005, D=0.000109892719478813)
+		DIMS(VID=435, Ver=79, D=2, D=1.25e-005, D=0.000100892719478813)
+		DIMS(VID=436, Ver=79, D=2, D=1.25e-005, D=0.000100033565353891)
+		DIMS(VID=437, Ver=79, D=2, D=1.25e-005, D=9.989621033057339e-005)
+		DIMS(VID=438, Ver=79, D=2, D=1.25e-005, D=9.997203332685308e-005)
+		DIMS(VID=439, Ver=79, D=2, D=1.25e-005, D=9.996602805011832e-005)
+		DIMS(VID=440, Ver=79, D=2, D=1.25e-005, D=0.000100004539324137)
+		DIMS(VID=441, Ver=79, D=2, D=1.25e-005, D=0.000100000817821751)
+	$end 'LumpedPortDimensions'
+	$begin 'MI'
+		$begin 'SubData'
+			ID=0
+			MI(VID=59, Ver=79, Dir='DV59_MI0_V79.sd/')
+		$end 'SubData'
+	$end 'MI'
+$end 'SolutionBlock1'
+$begin 'BlockMapName'
+	FileHeader='SolutionBlock1'
+	'SolutionKey(SimSetup=228, Instance=\'SetupDefinition\', Solution=-1, VersionID=372)'='SolutionBlock19'
+	'SolutionKey(SimSetup=228, Instance=\'SolutionDefinition\', Solution=229, VersionID=372)'='SolutionBlock16'
+	'SolutionKey(SimSetup=228, Instance=\'SolutionDefinition\', Solution=230, VersionID=372)'='SolutionBlock17'
+	'SolutionKey(SimSetup=228, Instance=\'SolutionDefinition\', Solution=231, VersionID=372)'='SolutionBlock18'
+	'SolutionKey(SimSetup=228, Instance=\'dip_length=\\\'2.13125mm\\\' dip_rad=\\\'0.045mm\\\' gap_src=\\\'0.0125mm\\\' lambda=\\\'9mm\\\' radiation_height=\\\'3.0375mm\\\' radiation_rad=\\\'2.295mm\\\' res_length=\\\'4.275mm\\\'\', Solution=-3, VersionID=372)'='SolutionBlock22'
+	'SolutionKey(SimSetup=228, Instance=\'dip_length=\\\'2.31671460791676mm\\\' dip_rad=\\\'0.0489045180614055mm\\\' gap_src=\\\'0.0125mm\\\' lambda=\\\'9.78090361228109mm\\\' radiation_height=\\\'3.30105496914487mm\\\' radiation_rad=\\\'2.49413042113168mm\\\' res_length=\\\'4.64592921583352mm\\\'\', Solution=-3, VersionID=372)'='SolutionBlock26'
+	'SolutionKey(SimSetup=228, Instance=\'dip_length=\\\'2.33765782810398mm\\\' dip_rad=\\\'0.0493454279600838mm\\\' gap_src=\\\'0.0125mm\\\' lambda=\\\'9.86908559201676mm\\\' radiation_height=\\\'3.33081638730566mm\\\' radiation_rad=\\\'2.51661682596427mm\\\' res_length=\\\'4.68781565620796mm\\\'\', Solution=-3, VersionID=372)'='SolutionBlock23'
+	'SolutionKey(SimSetup=228, Instance=\'dip_length=\\\'2.34511055959753mm\\\' dip_rad=\\\'0.0495023275704744mm\\\' gap_src=\\\'0.0125mm\\\' lambda=\\\'9.90046551409488mm\\\' radiation_height=\\\'3.34140711100702mm\\\' radiation_rad=\\\'2.52461870609419mm\\\' res_length=\\\'4.70272111919507mm\\\'\', Solution=-3, VersionID=372)'='SolutionBlock24'
+	'SolutionKey(SimSetup=228, Instance=\'dip_length=\\\'2.36365900357101mm\\\' dip_rad=\\\'0.0498928211278107mm\\\' gap_src=\\\'0.0125mm\\\' lambda=\\\'9.97856422556214mm\\\' radiation_height=\\\'3.36776542612722mm\\\' radiation_rad=\\\'2.54453387751835mm\\\' res_length=\\\'4.73981800714202mm\\\'\', Solution=-3, VersionID=372)'='SolutionBlock28'
+	'SolutionKey(SimSetup=228, Instance=\'dip_length=\\\'2.36620208762181mm\\\' dip_rad=\\\'0.0499463597394065mm\\\' gap_src=\\\'0.0125mm\\\' lambda=\\\'9.9892719478813mm\\\' radiation_height=\\\'3.37137928240994mm\\\' radiation_rad=\\\'2.54726434670973mm\\\' res_length=\\\'4.74490417524362mm\\\'\', Solution=-3, VersionID=372)'='SolutionBlock25'
+	'SolutionKey(SimSetup=228, Instance=\'dip_length=\\\'2.36628499535112mm\\\' dip_rad=\\\'0.0499481051652867mm\\\' gap_src=\\\'0.0125mm\\\' lambda=\\\'9.98962103305734mm\\\' radiation_height=\\\'3.37149709865685mm\\\' radiation_rad=\\\'2.54735336342962mm\\\' res_length=\\\'4.74506999070224mm\\\'\', Solution=-3, VersionID=372)'='SolutionBlock32'
+	'SolutionKey(SimSetup=228, Instance=\'dip_length=\\\'2.36794316619031mm\\\' dip_rad=\\\'0.0499830140250592mm\\\' gap_src=\\\'0.0125mm\\\' lambda=\\\'9.99660280501183mm\\\' radiation_height=\\\'3.37385344669149mm\\\' radiation_rad=\\\'2.54913371527802mm\\\' res_length=\\\'4.74838633238062mm\\\'\', Solution=-3, VersionID=372)'='SolutionBlock34'
+	'SolutionKey(SimSetup=228, Instance=\'dip_length=\\\'2.36808579151276mm\\\' dip_rad=\\\'0.0499860166634265mm\\\' gap_src=\\\'0.0125mm\\\' lambda=\\\'9.99720333268531mm\\\' radiation_height=\\\'3.37405612478129mm\\\' radiation_rad=\\\'2.54928684983475mm\\\' res_length=\\\'4.74867158302552mm\\\'\', Solution=-3, VersionID=372)'='SolutionBlock33'
+	'SolutionKey(SimSetup=228, Instance=\'dip_length=\\\'2.36874517167261mm\\\' dip_rad=\\\'0.0499998983510022mm\\\' gap_src=\\\'0.0125mm\\\' lambda=\\\'9.99997967020045mm\\\' radiation_height=\\\'3.37499313869265mm\\\' radiation_rad=\\\'2.54999481590111mm\\\' res_length=\\\'4.74999034334521mm\\\'\', Solution=-3, VersionID=372)'='SolutionBlock27'
+	'SolutionKey(SimSetup=228, Instance=\'dip_length=\\\'2.36875mm\\\' dip_rad=\\\'0.05mm\\\' gap_src=\\\'0.0125mm\\\' lambda=\\\'10mm\\\' radiation_height=\\\'3.375mm\\\' radiation_rad=\\\'2.55mm\\\' res_length=\\\'4.75mm\\\'\', Solution=-3, VersionID=372)'='SolutionBlock20'
+	'SolutionKey(SimSetup=228, Instance=\'dip_length=\\\'2.36876942326659mm\\\' dip_rad=\\\'0.0500004089108755mm\\\' gap_src=\\\'0.0125mm\\\' lambda=\\\'10.0000817821751mm\\\' radiation_height=\\\'3.3750276014841mm\\\' radiation_rad=\\\'2.55002085445465mm\\\' res_length=\\\'4.75003884653317mm\\\'\', Solution=-3, VersionID=372)'='SolutionBlock36'
+	'SolutionKey(SimSetup=228, Instance=\'dip_length=\\\'2.36885780894825mm\\\' dip_rad=\\\'0.0500022696620685mm\\\' gap_src=\\\'0.0125mm\\\' lambda=\\\'10.0004539324137mm\\\' radiation_height=\\\'3.37515320218962mm\\\' radiation_rad=\\\'2.55011575276549mm\\\' res_length=\\\'4.75021561789651mm\\\'\', Solution=-3, VersionID=372)'='SolutionBlock35'
+	'SolutionKey(SimSetup=228, Instance=\'dip_length=\\\'2.36954717715491mm\\\' dip_rad=\\\'0.0500167826769455mm\\\' gap_src=\\\'0.0125mm\\\' lambda=\\\'10.0033565353891mm\\\' radiation_height=\\\'3.37613283069382mm\\\' radiation_rad=\\\'2.55085591652422mm\\\' res_length=\\\'4.75159435430982mm\\\'\', Solution=-3, VersionID=372)'='SolutionBlock31'
+	'SolutionKey(SimSetup=228, Instance=\'dip_length=\\\'2.38995208762181mm\\\' dip_rad=\\\'0.0504463597394065mm\\\' gap_src=\\\'0.0125mm\\\' lambda=\\\'10.0892719478813mm\\\' radiation_height=\\\'3.40512928240994mm\\\' radiation_rad=\\\'2.57276434670973mm\\\' res_length=\\\'4.79240417524362mm\\\'\', Solution=-3, VersionID=372)'='SolutionBlock30'
+	'SolutionKey(SimSetup=228, Instance=\'dip_length=\\\'2.39238944040246mm\\\' dip_rad=\\\'0.0504976724295255mm\\\' gap_src=\\\'0.0125mm\\\' lambda=\\\'10.0995344859051mm\\\' radiation_height=\\\'3.40859288899297mm\\\' radiation_rad=\\\'2.5753812939058mm\\\' res_length=\\\'4.79727888080492mm\\\'\', Solution=-3, VersionID=372)'='SolutionBlock21'
+	'SolutionKey(SimSetup=228, Instance=\'dip_length=\\\'2.60370208762181mm\\\' dip_rad=\\\'0.0549463597394065mm\\\' gap_src=\\\'0.0125mm\\\' lambda=\\\'10.9892719478813mm\\\' radiation_height=\\\'3.70887928240994mm\\\' radiation_rad=\\\'2.80226434670973mm\\\' res_length=\\\'5.21990417524362mm\\\'\', Solution=-3, VersionID=372)'='SolutionBlock29'
+$end 'BlockMapName'

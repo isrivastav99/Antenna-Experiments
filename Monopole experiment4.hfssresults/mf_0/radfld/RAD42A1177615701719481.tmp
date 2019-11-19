@@ -1,0 +1,12 @@
+$begin 'RFSM'
+	$begin 'RadSurfs'
+	$end 'RadSurfs'
+	$begin 'CustomSurfs'
+	$end 'CustomSurfs'
+	$begin 'SetupSolns'
+		$begin 'SetupSolnEntry'
+			Key(ParentID=0, VersID=1, ParentID=26, VersID=0, Context='0:0', DesVarn='copper_t=\'35um\' fr4h=\'60mil\' l=\'30cm\' ms_ws=\'2.836mm\' w=\'30cm\'', IntrVarn='Freq=\'2.4GHz\'')
+			SetupSolnFBOFile='5F37177615701741899.tmp'
+		$end 'SetupSolnEntry'
+	$end 'SetupSolns'
+$end 'RFSM'

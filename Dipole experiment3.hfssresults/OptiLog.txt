@@ -1,0 +1,200 @@
+
+=== constructing optimizer ===
+
+--- Begin Model Info ---
+# inp variables = 1
+# out variables = 1
+Lower Bounds(inp) follow
+DoubleArr: dim = 1
+array[0] = 0.005
+Upper Bounds(inp) follow
+DoubleArr: dim = 1
+array[0] = 0.015
+--- Begin ConstraintArr Info ---
+Array dim = 2
+Begin Linear Constraint
+RHS = -0.005
+Coef vector follows: DoubleArr: dim = 1
+array[0] = -1
+End Linear Constraint
+Begin Linear Constraint
+RHS = 0.015
+Coef vector follows: DoubleArr: dim = 1
+array[0] = 1
+End Linear Constraint
+--- End ConstraintArr Info ---
+Min steps follow
+DoubleArr: dim = 1
+array[0] = 0.0001
+Max steps follow
+DoubleArr: dim = 1
+array[0] = 0.001
+X-scales follow
+DoubleArr: dim = 1
+array[0] = 2e-033
+Max scaled bondary violations follow
+DoubleArr: dim = 2
+array[0] = 0
+array[1] = 0
+--- End Model Info ---
+
+--- Begin Generic Optimizer Info ---
+Cost limit = 0
+Iter limit = 100
+Act iter # = 0
+InitInstance InstanceListIterator is invalid
+
+BestInstance InstanceListIterator is invalid
+
+--- End Generic Optimizer Info ---
+
+--- Begin OptiMd Info ---
+Noise = 0.0001
+maxStepCountLimit =5
+noSuccessCountLimit =3
+threePointMode = OFF
+variableErrorMode = ON
+--- End OptiMd Info ---
+
+UseBestinList	Init:Feasible&Solved	input	0.01	output	637.036882244998
+UseInitInst	initUpdate	input	0.01	output	637.036882244998
+logH	rescale	input	0	0	output	50962150.57959985
+Initial Gradient Approximation:
+calcGrd	0->1	input	0.01009953448590512	output	656.2286882569824
+logNoise	center	input	0.01	output	0.504887829585856
+logGrad	grad	input	0.01	output	192815.6441203584
+logGrad	error	input	0.01	output	12681.22864639937
+grdPnts	center	input	0.01	output	637.036882244998
+grdPnts	1:aux1	input	0.01009953448590512	output	656.2286882569824
+Initial Rescaling the Hessian:
+logH	rescale	input	0	0	output	50962150.57959985
+Initialization done, Try to do the First Step!
+Entry point in main iteration loop.
+The Actual Positin Is		input	0.01	output	637.036882244998
+constrainedQuadOptimum returned:
+Solved
+Proposed step for Line Search		input	-0.003783506816871706	output	0
+lineSearch	init	input	0.009000000000000001	output	1180.639968082315
+BTrack	alpha	input	0.00986908559201676	output	654.5418895982062
+lineSearch returned:
+Solved (below minimum step width, acceptable cost limit NOT satisfied)
+The New Positin Is		input	0.00986908559201676	output	654.5418895982062
+Line Search Failed!
+mainLoop	copy	input	0.01	output	637.036882244998
+Line Search Could not even improve the cost function!
+improveGrd	1->x	input	0.00990046551409488	output	661.3061355873786
+logNoise	center	input	0.01	output	0.504887829585856
+logGrad	grad	input	0.01	output	-25505.97053987533
+logGrad	error	input	0.01	output	5072.491458559737
+grdPnts	center	input	0.01	output	637.036882244998
+grdPnts	2:aux1	input	0.01009953448590512	output	656.2286882569824
+grdPnts	2:aux2	input	0.00990046551409488	output	661.3061355873786
+logH	rescale	input	0	0	output	4386853715.572518
+improveGrd	2->2	input	0.009989271947881295	output	632.2209413192877
+logNoise	center	input	0.01	output	0.504887829585856
+logGrad	grad	input	0.01	output	423994.0935349241
+logGrad	error	input	0.01	output	84966.8691721488
+grdPnts	center	input	0.01	output	637.036882244998
+grdPnts	2:aux1	input	0.01009953448590512	output	656.2286882569824
+grdPnts	2:aux2	input	0.009989271947881295	output	632.2209413192877
+Gradient improved, Hessian updated, Try next step!
+Entry point in main iteration loop.
+The Actual Positin Is		input	0.01	output	637.036882244998
+Constrained search on linear model
+constrainedLinOptimum searchlocation		input	0.00849755717837016	output	0
+constrainedLinOptimum returned:
+Solved
+Proposed step for Line Search		input	-0.00150244282162984	output	0
+lineSearch	Lookup	input	0.009000000000000001	output	1180.639968082315
+BTrack	alpha	input	0.009780903612281093	output	703.7577060955875
+lineSearch returned:
+Solved (below minimum step width, acceptable cost limit NOT satisfied)
+The New Positin Is		input	0.009780903612281093	output	703.7577060955875
+Line Search Failed!
+mainLoop	copy	input	0.009989271947881295	output	632.2209413192877
+Line search could improve the cost function, even it has failed!
+calcGrd	0->1	input	0.00999997967020045	output	630.4861198389743
+improveGrd	1->x	input	0.009978564225562141	output	631.5258834417077
+logNoise	center	input	0.009989271947881295	output	0.5029761045503307
+logGrad	grad	input	0.009989271947881295	output	-48552.04364395142
+logGrad	error	input	0.009989271947881295	output	46973.21144110912
+grdPnts	center	input	0.009989271947881295	output	632.2209413192877
+grdPnts	2:aux1	input	0.00999997967020045	output	630.4861198389743
+grdPnts	2:aux2	input	0.009978564225562141	output	631.5258834417077
+logH	update	input	0	0	output	44047710800.63683
+New Gradient calculated, Hessian updated, rescaled, try next step!
+Entry point in main iteration loop.
+The Actual Positin Is		input	0.009989271947881295	output	632.2209413192877
+Constrained search on linear model
+constrainedLinOptimum searchlocation		input	0.015	output	0
+constrNormal	lagr	input	1	output	-48552.04364395142
+num Active constr == num OptVars.
+constrainedLinOptimum searchlocation		input	0.015	output	0
+constrNormal	lagr	input	1	output	-48552.04364395142
+num Active constr == num OptVars.
+constrainedLinOptimum searchlocation		input	0.015	output	0
+constrNormal	lagr	input	1	output	-48552.04364395142
+num Active constr == num OptVars.
+constrainedLinOptimum searchlocation		input	0.015	output	0
+constrNormal	lagr	input	1	output	-48552.04364395142
+constrainedLinOptimum returned:
+Valid but not solved. For internal use only
+Proposed step for Line Search		input	0.005010728052118704	output	0
+lineSearch	init	input	0.0109892719478813	output	1109.946245404819
+BTrack	alpha	input	0.0100892719478813	output	654.331246916862
+lineSearch returned:
+Solved (below minimum step width, acceptable cost limit NOT satisfied)
+The New Positin Is		input	0.0100892719478813	output	654.331246916862
+Line Search Failed!
+mainLoop	copy	input	0.00999997967020045	output	630.4861198389743
+Line search could improve the cost function, even it has failed!
+calcGrd	0->1	input	0.01000335653538908	output	635.351227455799
+logNoise	center	input	0.00999997967020045	output	0.5022856707788362
+logGrad	grad	input	0.00999997967020045	output	1440717.15779854
+logGrad	error	input	0.00999997967020045	output	371857.9531030997
+grdPnts	center	input	0.00999997967020045	output	630.4861198389743
+grdPnts	1:aux1	input	0.01000335653538908	output	635.351227455799
+logH	update	input	0	0	output	139083659162.3603
+logH	rescale	input	0	0	output	139083659162.3603
+New Gradient calculated, Hessian updated, rescaled, try next step!
+Entry point in main iteration loop.
+The Actual Positin Is		input	0.00999997967020045	output	630.4861198389743
+constrainedQuadOptimum returned:
+Solved
+Proposed step for Line Search		input	-1.035863714310761e-005	output	0
+lineSearch	init	input	0.009989621033057342	output	643.4030536498125
+BTrack	alpha	input	0.00999720333268531	output	633.3272889684944
+lineSearch returned:
+Solved (below minimum step width, acceptable cost limit NOT satisfied)
+The New Positin Is		input	0.00999720333268531	output	633.3272889684944
+Line Search Failed!
+mainLoop	copy	input	0.00999997967020045	output	630.4861198389743
+Line Search Could not even improve the cost function!
+improveGrd	1->x	input	0.009996602805011825	output	639.151907725717
+logNoise	center	input	0.00999997967020045	output	0.5022856707788362
+logGrad	grad	input	0.00999997967020045	output	-562752.7392444611
+logGrad	error	input	0.00999997967020045	output	148743.1812412271
+grdPnts	center	input	0.00999997967020045	output	630.4861198389743
+grdPnts	2:aux1	input	0.01000335653538908	output	635.351227455799
+grdPnts	2:aux2	input	0.009996602805011825	output	639.151907725717
+logH	rescale	input	0	0	output	1186585655709.343
+Gradient improved, Hessian updated, Try next step!
+Entry point in main iteration loop.
+The Actual Positin Is		input	0.00999997967020045	output	630.4861198389743
+constrainedQuadOptimum returned:
+Solved
+Proposed step for Line Search		input	4.742622132132557e-007	output	0
+lineSearch	init	input	0.01000045393241366	output	630.8390223739426
+BTrack	alpha	input	0.01000008178217512	output	637.3493947916854
+lineSearch returned:
+Solved (below minimum step width, acceptable cost limit NOT satisfied)
+The New Positin Is		input	0.01000045393241366	output	630.8390223739426
+Line Search Failed!
+mainLoop	copy	input	0.00999997967020045	output	630.4861198389743
+Line Search Could not even improve the cost function!
+logNoise	center	input	0.00999997967020045	output	0.5022856707788362
+logGrad	grad	input	0.00999997967020045	output	-562752.7392444611
+logGrad	error	input	0.00999997967020045	output	148743.1812412271
+grdPnts	center	input	0.00999997967020045	output	630.4861198389743
+grdPnts	2:aux1	input	0.01000335653538908	output	635.351227455799
+grdPnts	2:aux2	input	0.009996602805011825	output	639.151907725717
