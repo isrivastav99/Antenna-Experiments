@@ -1,0 +1,227 @@
+$begin '$base_index$'
+  $begin 'properties'
+    all_levels=000000000000
+    time(year=000000002019, month=000000000010, day=000000000022, hour=000000000012, min=000000000054, sec=000000000055)
+    version=000000000000
+  $end 'properties'
+  $begin '$base_index$'
+    $index$(pos=000000005554, lin=000000000205, lvl=000000000000)
+  $end '$base_index$'
+$end '$base_index$'
+$begin 'SolutionBlock1'
+	ProductName=''
+	CircuitName='HFSSDesign2'
+	VersionID=9
+	PostProcess=false
+	LossLess=true
+	NextUniqueID=77
+	MoveBackwards=false
+	$begin 'VariationIDs'
+		Map(V='dip_length=\'2.36875mm\' dip_rad=\'0.05mm\' gap_src=\'0.0125mm\' lambda=\'10mm\' radition_height=\'3.375mm\' radition_rad=\'2.55mm\' res_length=\'4.75mm\'', ID=57)
+	$end 'VariationIDs'
+	$begin 'LinkedDataList'
+	$end 'LinkedDataList'
+	$begin 'InitialMeshes'
+		M(VID=57, Ver=9, Dir='DV57_V9.imesh/')
+	$end 'InitialMeshes'
+	$begin 'LumpedPortDimensions'
+		DIMS(VID=57, Ver=9, D=0, D=1.25e-005, D=0.0001)
+	$end 'LumpedPortDimensions'
+	$begin 'MI'
+		$begin 'SubData'
+			ID=0
+			MI(VID=57, Ver=9, Dir='DV57_MI0_V9.sd/')
+		$end 'SubData'
+	$end 'MI'
+$end 'SolutionBlock1'
+$begin 'BlockMapName'
+	FileHeader='SolutionBlock1'
+	'SolutionKey(SimSetup=12, Instance=\'SetupDefinition\', Solution=-1, VersionID=0)'='SolutionBlock5'
+	'SolutionKey(SimSetup=12, Instance=\'SolutionDefinition\', Solution=13, VersionID=0)'='SolutionBlock2'
+	'SolutionKey(SimSetup=12, Instance=\'SolutionDefinition\', Solution=14, VersionID=0)'='SolutionBlock3'
+	'SolutionKey(SimSetup=12, Instance=\'SolutionDefinition\', Solution=18, VersionID=0)'='SolutionBlock4'
+	'SolutionKey(SimSetup=12, Instance=\'dip_length=\\\'2.36875mm\\\' dip_rad=\\\'0.05mm\\\' gap_src=\\\'0.0125mm\\\' lambda=\\\'10mm\\\' radition_height=\\\'3.375mm\\\' radition_rad=\\\'2.55mm\\\' res_length=\\\'4.75mm\\\'\', Solution=-3, VersionID=0)'='SolutionBlock6'
+$end 'BlockMapName'
+$begin 'SolutionBlock5'
+	SimSetupID=12
+	SimSetupName='Setup1'
+	VersionID=0
+	IsImported=false
+	IsTable=false
+	SolveSetupID=0
+	$begin 'CurrMeshes'
+		M(VID=57, Ver=0, Dir='DV57_S12_V0.cmesh/')
+	$end 'CurrMeshes'
+	$begin 'RadFieldSurfMeshes'
+		SM(VID=57, Ver=0, Dir='DV57_S12_V0.sfmesh/')
+	$end 'RadFieldSurfMeshes'
+	$begin 'WaveAdapt'
+		WA(VID=57, Ver=0, A=1)
+	$end 'WaveAdapt'
+	$begin 'LastPassNumbers'
+		LP(VID=57, Ver=0, P=4)
+	$end 'LastPassNumbers'
+	$begin 'Profiles'
+		P(VID=57, Ver=0, File='DV57_S12_V0.profile')
+	$end 'Profiles'
+	$begin 'MI'
+		$begin 'SubData'
+			ID=0
+			MI(VID=57, Ver=0, Dir='DV57_S12_MI0_V0.sd/')
+		$end 'SubData'
+	$end 'MI'
+$end 'SolutionBlock5'
+$begin 'SolutionBlock2'
+	SolutionName='AdaptivePass'
+	SolutionID=13
+	V=0
+	$begin 'States'
+		F(VID=57, Ver=0)
+	$end 'States'
+	$begin 'Definition'
+		SamplingInterpolation=false
+		Frequencies(29979200000)
+		SolutionType=6
+		CenterFreq=0
+	$end 'Definition'
+	IsImported=false
+	IsTable=false
+	IsMatrixDataTable=false
+	SweepID=-1
+	KeepAllFastSweepFields=false
+	$begin 'M'
+		$begin 'SubData'
+			ID=1
+			M(VID=57, Ver=0, File='DV57_SOL13_M1_V0.sd')
+		$end 'SubData'
+		$begin 'SubData'
+			ID=2
+			M(VID=57, Ver=0, File='DV57_SOL13_M2_V0.sd')
+		$end 'SubData'
+		$begin 'SubData'
+			ID=3
+			M(VID=57, Ver=0, File='DV57_SOL13_M3_V0.sd')
+		$end 'SubData'
+		$begin 'SubData'
+			ID=4
+			M(VID=57, Ver=0, File='DV57_SOL13_M4_V0.sd')
+		$end 'SubData'
+	$end 'M'
+	$begin 'A'
+		$begin 'SubData'
+			ID=0
+			A(VID=57, Ver=0, File='DV57_SOL13_A0_V0.sd')
+		$end 'SubData'
+		$begin 'SubData'
+			ID=1
+			A(VID=57, Ver=0, File='DV57_SOL13_A1_V0.sd')
+		$end 'SubData'
+		$begin 'SubData'
+			ID=2
+			A(VID=57, Ver=0, File='DV57_SOL13_A2_V0.sd')
+		$end 'SubData'
+		$begin 'SubData'
+			ID=3
+			A(VID=57, Ver=0, File='DV57_SOL13_A3_V0.sd')
+		$end 'SubData'
+		$begin 'SubData'
+			ID=4
+			A(VID=57, Ver=0, File='DV57_SOL13_A4_V0.sd')
+		$end 'SubData'
+	$end 'A'
+$end 'SolutionBlock2'
+$begin 'SolutionBlock3'
+	SolutionName='LastAdaptive'
+	SolutionID=14
+	V=0
+	$begin 'States'
+		F(VID=57, Ver=0)
+	$end 'States'
+	$begin 'Definition'
+		SamplingInterpolation=false
+		Frequencies(29979200000)
+		SolutionType=6
+		CenterFreq=0
+	$end 'Definition'
+	IsImported=false
+	IsTable=false
+	IsMatrixDataTable=false
+	SweepID=-1
+	KeepAllFastSweepFields=false
+	$begin 'M'
+		$begin 'SubData'
+			ID=0
+			M(VID=57, Ver=0, File='DV57_SOL14_M0_V0.sd')
+		$end 'SubData'
+	$end 'M'
+	$begin 'Fields'
+		IDDblMap(65, 29979200000)
+		$begin 'DataMap'
+			VID=57
+			Ver=0
+			F(DblID=65, Dir='DV57_S14_V0_F65/')
+		$end 'DataMap'
+	$end 'Fields'
+$end 'SolutionBlock3'
+$begin 'SolutionBlock6'
+	ConvSetupName='DrivenDeltaSConvNOV'
+	IsConverged=true
+	MaxPasses='6'
+	MinPasses='1'
+	ConvTarget='0.02'
+	ConvTargetConsecPasses='1'
+	ConvCurrentConsecPasses='1'
+	c(numtets=2989, passno=1)
+	c(numtets=3890, magdeltas=0.07652464608740033, passno=2)
+	c(numtets=5060, magdeltas=0.02966327356432588, passno=3)
+	c(numtets=6600, magdeltas=0.007828813065564103, passno=4)
+$end 'SolutionBlock6'
+$begin 'SolutionBlock4'
+	SolutionName='Sweep'
+	SolutionID=18
+	V=0
+	$begin 'States'
+		F(VID=57, Ver=0)
+	$end 'States'
+	$begin 'Definition'
+		SamplingInterpolation=true
+		SweepDefType='LIN'
+		StartFreq=25000000000
+		StopFreq=35000000000
+		StepSize=10010010.01001001
+		SolutionType=4
+		CenterFreq=30000000000
+	$end 'Definition'
+	IsImported=false
+	IsTable=false
+	IsMatrixDataTable=false
+	SweepID=0
+	KeepAllFastSweepFields=false
+	$begin 'M'
+		$begin 'SubData'
+			ID=0
+			M(VID=57, Ver=0, File='DV57_SOL18_M0_V0.sd')
+		$end 'SubData'
+	$end 'M'
+	$begin 'Fields'
+		IDDblMap(75, 30000000000)
+		$begin 'DataMap'
+			VID=57
+			Ver=0
+			F(DblID=75, Dir='DV57_S18_V0_F75/')
+		$end 'DataMap'
+	$end 'Fields'
+$end 'SolutionBlock4'
+$begin '$index$'
+	$begin '$index$'
+		BlockMapName(pos=1118, lin=27, lvl=0)
+		SolutionBlock6(pos=4431, lin=156, lvl=0)
+		SolutionBlock2(pos=2541, lin=64, lvl=0)
+		SolutionBlock3(pos=3788, lin=123, lvl=0)
+		SolutionBlock4(pos=4840, lin=169, lvl=0)
+		SolutionBlock5(pos=1870, lin=35, lvl=0)
+		SolutionBlock1(pos=370, lin=1, lvl=0)
+		$base_index$(pos=0, lin=1, lvl=0)
+		$index$(pos=5554, lin=205, lvl=0)
+	$end '$index$'
+$end '$index$'

@@ -1,0 +1,2443 @@
+$begin 'AnsoftProject'
+	Created='Tue Oct 22 12:34:49 2019'
+	FileOwnedByWorkbench=false
+	Product='HFSS'
+	NextUniqueID=0
+	MoveBackwards=false
+	$begin 'Desktop'
+		Version(15, 0)
+		InfrastructureVersion(1, 0)
+	$end 'Desktop'
+	$begin 'HFSSEnvironment'
+		Version(1, 0)
+	$end 'HFSSEnvironment'
+	$begin 'HFIEEnvironment'
+		Version(1, 0)
+	$end 'HFIEEnvironment'
+	$begin 'geometry3deditor'
+		Version(1, 0)
+	$end 'geometry3deditor'
+	$begin 'ProjectDatasets'
+		NextUniqueID=0
+		MoveBackwards=false
+		DatasetType='ProjectDatasetType'
+		$begin 'DatasetDefinitions'
+		$end 'DatasetDefinitions'
+	$end 'ProjectDatasets'
+	$begin 'Definitions'
+		$begin 'Folders'
+			Definitions(1104, 10000, 1, 1, 0, false, false)
+			Materials(1104, 9500, 9, 2, 1, false, false)
+		$end 'Folders'
+		$begin 'Materials'
+			$begin 'vacuum'
+				CoordinateSystemType='Cartesian'
+				$begin 'AttachedData'
+				$end 'AttachedData'
+				$begin 'ModifierData'
+				$end 'ModifierData'
+				permittivity='1'
+				ModTime=1028307964
+				Library='Materials'
+				LibLocation='SysLibrary'
+				ModSinceLib=false
+			$end 'vacuum'
+			$begin 'air'
+				CoordinateSystemType='Cartesian'
+				$begin 'AttachedData'
+				$end 'AttachedData'
+				$begin 'ModifierData'
+				$end 'ModifierData'
+				permittivity='1.0006'
+				permeability='1.0000004'
+				thermal_conductivity='0.026'
+				mass_density='1.1614'
+				specific_heat='1007'
+				ModTime=1132068239
+				Library='Materials'
+				LibLocation='SysLibrary'
+				ModSinceLib=false
+			$end 'air'
+			$begin 'pec'
+				CoordinateSystemType='Cartesian'
+				$begin 'AttachedData'
+				$end 'AttachedData'
+				$begin 'ModifierData'
+				$end 'ModifierData'
+				conductivity='1e+030'
+				ModTime=1028307964
+				Library='Materials'
+				LibLocation='SysLibrary'
+				ModSinceLib=false
+			$end 'pec'
+		$end 'Materials'
+		$begin 'Scripts'
+		$end 'Scripts'
+	$end 'Definitions'
+	DesignIDServer=4
+	MoveBackwards=false
+	$begin 'HFSSModel'
+		RepRewriteV2=true
+		Name='HFSSDesign2'
+		DesignID=2
+		'Use Advanced DC Extrapolation'=false
+		'Allow Material Override'=false
+		'Calculate Lossy Dielectrics'=true
+		$begin 'TemperatureSettings'
+			IncludeTemperatureDependence=false
+			EnableFeedback=false
+			Temperatures(37, '22cel')
+		$end 'TemperatureSettings'
+		ObjsEnabledForDeformation()
+		SolutionType='DrivenModal'
+		MaterialDensity=1
+		MassOfTissue=1
+		UseAutoDCThickness=true
+		$begin 'OutputVariable'
+			NextUniqueID=0
+			MoveBackwards=false
+		$end 'OutputVariable'
+		$begin 'ModelSetup'
+			$begin 'Editor3D Doc Preferences'
+				'Plane Background'=true
+				BackgroundColor1=16777215
+				BackgroundColor2=0
+				'Need Lights'=true
+				'Ambient Light'=8355711
+				'Num Lights'=2
+				Light0[4: 8355711, 0.200000002980232, 0.400000005960464, 1]
+				Light1[4: 8355711, -0.200000002980232, -0.400000005960464, -1]
+			$end 'Editor3D Doc Preferences'
+			$begin 'DesignDatasets'
+				NextUniqueID=0
+				MoveBackwards=false
+				DatasetType='DesignDatasetType'
+				$begin 'DatasetDefinitions'
+				$end 'DatasetDefinitions'
+			$end 'DesignDatasets'
+			$begin 'Properties'
+				VariableProp('lambda', 'UD', '', '10mm')
+				VariableProp('dip_rad', 'UD', '', 'lambda/200')
+				VariableProp('radition_rad', 'UD', '', 'dip_rad+(lambda/4)')
+				VariableProp('res_length', 'UD', '', '0.475*lambda')
+				VariableProp('gap_src', 'UD', '', '0.0125mm')
+				VariableProp('dip_length', 'UD', '', 'res_length/2-(gap_src/2)')
+				VariableProp('radition_height', 'UD', '', 'gap_src/2+dip_length+lambda/10')
+			$end 'Properties'
+			SnapMode=31
+			WorkingCS=1
+			$begin 'GeometryCore'
+				BlockVersionID=3
+				DataVersion=5
+				NativeKernel='ACIS'
+				NativeKernelVersionID=5
+				Units='mm'
+				InstanceID=-1
+				$begin 'ValidationOptions'
+					EntityCheckLevel='Strict'
+					IgnoreUnclassifiedObjects=false
+					SkipIntersectionChecks=false
+				$end 'ValidationOptions'
+				$begin 'GeometryOperations'
+					BlockVersionID=2
+					$begin 'AnsoftRangedIDServerManager'
+						$begin 'AnsoftRangedIDServer'
+							IDServerObjectTypeID=0
+							IDServerRangeMin=0
+							IDServerRangeMax=2146483647
+							NextUniqueID=45
+							MoveBackwards=false
+						$end 'AnsoftRangedIDServer'
+						$begin 'AnsoftRangedIDServer'
+							IDServerObjectTypeID=1
+							IDServerRangeMin=2146483648
+							IDServerRangeMax=2146485547
+							NextUniqueID=2146483654
+							MoveBackwards=false
+						$end 'AnsoftRangedIDServer'
+					$end 'AnsoftRangedIDServerManager'
+					StartBackGroundFaceID=2146483648
+					$begin 'CoordinateSystems'
+					$end 'CoordinateSystems'
+					$begin 'UserDefinedModels'
+					$end 'UserDefinedModels'
+					$begin 'ToplevelParts'
+						$begin 'GeometryPart'
+							$begin 'Attributes'
+								Name='Cylinder1'
+								Flags=''
+								Color='(132 132 193)'
+								Transparency=0
+								PartCoordinateSystem=1
+								UDMId=-1
+								MaterialValue='"pec"'
+								SolveInside=false
+							$end 'Attributes'
+							$begin 'Operations'
+								$begin 'Operation'
+									OperationType='Cylinder'
+									ID=5
+									ReferenceCoordSystemID=1
+									$begin 'CylinderParameters'
+										KernelVersion=4
+										XCenter='0mm'
+										YCenter='0mm'
+										ZCenter='gap_src/2'
+										Radius='dip_rad'
+										Height='dip_length'
+										WhichAxis='Z'
+										NumSides='0'
+									$end 'CylinderParameters'
+									ParentPartID=6
+									IsSuppressed=false
+									$begin 'OperationIdentity'
+										$begin 'Topology'
+											NumLumps=1
+											NumShells=1
+											NumFaces=3
+											NumWires=0
+											NumLoops=4
+											NumCoedges=4
+											NumEdges=2
+											NumVertices=2
+										$end 'Topology'
+										BodyID=6
+										StartFaceID=7
+										StartEdgeID=10
+										StartVertexID=12
+										NumNewFaces=3
+										NumNewEdges=2
+										NumNewVertices=2
+										FaceNameAndIDMap()
+										EdgeNameAndIDMap()
+										VertexNameAndIDMap()
+									$end 'OperationIdentity'
+								$end 'Operation'
+								$begin 'CloneToOperation'
+									OperationType='DuplicateAroundAxis'
+									ID=14
+									ReferenceCoordSystemID=1
+									$begin 'DuplicateAroundAxisParameters'
+										KernelVersion=4
+										ClonedPart=6
+										CreateNewObjects=true
+										WhichAxis='X'
+										AngleStr='180deg'
+										NumClones='2'
+									$end 'DuplicateAroundAxisParameters'
+									ParentPartID=6
+								$end 'CloneToOperation'
+							$end 'Operations'
+						$end 'GeometryPart'
+						$begin 'GeometryPart'
+							$begin 'Attributes'
+								Name='Cylinder1_1'
+								Flags=''
+								Color='(132 132 193)'
+								Transparency=0
+								PartCoordinateSystem=1
+								UDMId=-1
+								MaterialValue='"pec"'
+								SolveInside=false
+							$end 'Attributes'
+							$begin 'Operations'
+								$begin 'Operation'
+									OperationType='DuplicateBodyAroundAxis'
+									ID=15
+									$begin 'CloneFromParameters'
+										KernelVersion=4
+										SourcePartID=6
+										WhichClone=0
+									$end 'CloneFromParameters'
+									ParentPartID=16
+									IsSuppressed=false
+									$begin 'OperationIdentity'
+										$begin 'Topology'
+											NumLumps=1
+											NumShells=1
+											NumFaces=3
+											NumWires=0
+											NumLoops=4
+											NumCoedges=4
+											NumEdges=2
+											NumVertices=2
+										$end 'Topology'
+										BodyID=16
+										StartFaceID=17
+										StartEdgeID=20
+										StartVertexID=22
+										NumNewFaces=3
+										NumNewEdges=2
+										NumNewVertices=2
+										FaceNameAndIDMap()
+										EdgeNameAndIDMap()
+										VertexNameAndIDMap()
+										$begin 'CloneFromOperationIdentityHelper'
+											CloneFaces('7'='17', '8'='18', '9'='19')
+											CloneEdges('10'='20', '11'='21')
+											CloneVertices('12'='22', '13'='23')
+										$end 'CloneFromOperationIdentityHelper'
+										OriginalFaceIDs(7, 8, 9)
+										OriginalEdgeIDs(10, 11)
+										OriginalVertexIDs(12, 13)
+									$end 'OperationIdentity'
+									PlaceHolderOpnId=14
+								$end 'Operation'
+							$end 'Operations'
+						$end 'GeometryPart'
+						$begin 'GeometryPart'
+							$begin 'Attributes'
+								Name='Rectangle1'
+								Flags=''
+								Color='(132 132 193)'
+								Transparency=0
+								PartCoordinateSystem=1
+								UDMId=-1
+								MaterialValue='"vacuum"'
+								SolveInside=true
+							$end 'Attributes'
+							$begin 'Operations'
+								$begin 'Operation'
+									OperationType='Rectangle'
+									ID=24
+									ReferenceCoordSystemID=1
+									$begin 'RectangleParameters'
+										KernelVersion=4
+										XStart='0mm'
+										YStart='-dip_rad'
+										ZStart='-gap_src/2'
+										Width='dip_rad*2'
+										Height='gap_src'
+										WhichAxis='X'
+									$end 'RectangleParameters'
+									ParentPartID=25
+									IsSuppressed=false
+									$begin 'OperationIdentity'
+										$begin 'Topology'
+											NumLumps=1
+											NumShells=1
+											NumFaces=0
+											NumWires=1
+											NumLoops=0
+											NumCoedges=4
+											NumEdges=4
+											NumVertices=4
+										$end 'Topology'
+										BodyID=25
+										StartFaceID=-1
+										StartEdgeID=26
+										StartVertexID=30
+										NumNewFaces=0
+										NumNewEdges=4
+										NumNewVertices=4
+										FaceNameAndIDMap()
+										EdgeNameAndIDMap()
+										VertexNameAndIDMap()
+									$end 'OperationIdentity'
+								$end 'Operation'
+								$begin 'Operation'
+									OperationType='CoverLines'
+									ID=34
+									$begin 'LocalOperationParameters'
+										KernelVersion=4
+										LocalOpPart=25
+									$end 'LocalOperationParameters'
+									ParentPartID=25
+									IsSuppressed=false
+									$begin 'OperationIdentity'
+										$begin 'Topology'
+											NumLumps=1
+											NumShells=1
+											NumFaces=1
+											NumWires=0
+											NumLoops=1
+											NumCoedges=4
+											NumEdges=4
+											NumVertices=4
+										$end 'Topology'
+										BodyID=-1
+										StartFaceID=35
+										StartEdgeID=-1
+										StartVertexID=-1
+										NumNewFaces=1
+										NumNewEdges=0
+										NumNewVertices=0
+										FaceNameAndIDMap()
+										EdgeNameAndIDMap()
+										VertexNameAndIDMap()
+										$begin 'GeomTopolBasedOperationIdentityHelper'
+											$begin 'NewFaces'
+												$begin 'Face'
+													NormalizedSerialNum=0
+													ID=35
+													$begin 'FaceGeomTopol'
+														FaceTopol(1, 4, 4, 4)
+														$begin 'FaceGeometry'
+															Area=0.00125
+															FcUVMid(4.06669365391628e-018, 0, 1.12844638235259e-017)
+															$begin 'FcTolVts'
+																TolVt(0, -0.05, -0.00625, 0)
+																TolVt(6.12323399573677e-018, 0.05, -0.00624999999999998, 0)
+																TolVt(8.13338730783257e-018, 0.05, 0.00625000000000002, 0)
+																TolVt(2.0101533120958e-018, -0.05, 0.00625, 0)
+															$end 'FcTolVts'
+														$end 'FaceGeometry'
+													$end 'FaceGeomTopol'
+												$end 'Face'
+											$end 'NewFaces'
+											$begin 'NewEdges'
+											$end 'NewEdges'
+											$begin 'NewVertices'
+											$end 'NewVertices'
+										$end 'GeomTopolBasedOperationIdentityHelper'
+									$end 'OperationIdentity'
+									ParentOperationID=24
+								$end 'Operation'
+							$end 'Operations'
+						$end 'GeometryPart'
+						$begin 'GeometryPart'
+							$begin 'Attributes'
+								Name='Cylinder2'
+								Flags=''
+								Color='(132 132 193)'
+								Transparency=0.91
+								PartCoordinateSystem=1
+								UDMId=-1
+								MaterialValue='"air"'
+								SolveInside=true
+							$end 'Attributes'
+							$begin 'Operations'
+								$begin 'Operation'
+									OperationType='Cylinder'
+									ID=36
+									ReferenceCoordSystemID=1
+									$begin 'CylinderParameters'
+										KernelVersion=4
+										XCenter='0mm'
+										YCenter='0mm'
+										ZCenter='-radition_height'
+										Radius='radition_rad'
+										Height='radition_height*2'
+										WhichAxis='Z'
+										NumSides='0'
+									$end 'CylinderParameters'
+									ParentPartID=37
+									IsSuppressed=false
+									$begin 'OperationIdentity'
+										$begin 'Topology'
+											NumLumps=1
+											NumShells=1
+											NumFaces=3
+											NumWires=0
+											NumLoops=4
+											NumCoedges=4
+											NumEdges=2
+											NumVertices=2
+										$end 'Topology'
+										BodyID=37
+										StartFaceID=38
+										StartEdgeID=41
+										StartVertexID=43
+										NumNewFaces=3
+										NumNewEdges=2
+										NumNewVertices=2
+										FaceNameAndIDMap()
+										EdgeNameAndIDMap()
+										VertexNameAndIDMap()
+									$end 'OperationIdentity'
+								$end 'Operation'
+							$end 'Operations'
+						$end 'GeometryPart'
+					$end 'ToplevelParts'
+					$begin 'OperandParts'
+					$end 'OperandParts'
+					$begin 'Planes'
+					$end 'Planes'
+					$begin 'Points'
+					$end 'Points'
+					$begin 'GeometryEntityLists'
+					$end 'GeometryEntityLists'
+					$begin 'CachedNames'
+						$begin 'allobjects'
+							allobjects(-1)
+						$end 'allobjects'
+						$begin 'cylinder'
+							cylinder(1, 2)
+						$end 'cylinder'
+						$begin 'cylinder1_'
+							cylinder1_(1)
+						$end 'cylinder1_'
+						$begin 'global'
+							global(-1)
+						$end 'global'
+						$begin 'rectangle'
+							rectangle(1)
+						$end 'rectangle'
+					$end 'CachedNames'
+				$end 'GeometryOperations'
+				$begin 'GeometryDependencies'
+					$begin 'DependencyInformation'
+						NumParents=1
+						DependencyObject('GeometryBodyOperation', 5)
+						DependencyObject('CoordinateSystem', 1)
+					$end 'DependencyInformation'
+					$begin 'DependencyInformation'
+						NumParents=1
+						DependencyObject('GeometryOperation', 14)
+						DependencyObject('CoordinateSystem', 1)
+					$end 'DependencyInformation'
+					$begin 'DependencyInformation'
+						NumParents=2
+						DependencyObject('GeometryBodyOperation', 15)
+						DependencyObject('GeometryOperation', 14)
+						DependencyObject('GeometryBodyOperation', 5)
+					$end 'DependencyInformation'
+					$begin 'DependencyInformation'
+						NumParents=1
+						DependencyObject('GeometryBodyOperation', 24)
+						DependencyObject('CoordinateSystem', 1)
+					$end 'DependencyInformation'
+					$begin 'DependencyInformation'
+						NumParents=1
+						DependencyObject('GeometryBodyOperation', 34)
+						DependencyObject('GeometryBodyOperation', 24)
+					$end 'DependencyInformation'
+					$begin 'DependencyInformation'
+						NumParents=1
+						DependencyObject('GeometryBodyOperation', 36)
+						DependencyObject('CoordinateSystem', 1)
+					$end 'DependencyInformation'
+				$end 'GeometryDependencies'
+			$end 'GeometryCore'
+			GroupByMaterial('-1'=true)
+			GroupSheetByMaterial()
+			$begin 'LastUserInputs'
+			$end 'LastUserInputs'
+		$end 'ModelSetup'
+		$begin 'BoundarySetup'
+			$begin 'GlobalBoundData'
+				PortImpedance='1'
+				GlobalMaterialEnv='vacuum'
+			$end 'GlobalBoundData'
+			$begin 'Boundaries'
+				NextUniqueID=2
+				MoveBackwards=false
+				$begin 'Rad1'
+					ID=1
+					BoundType='Radiation'
+					Objects(37)
+					ParentBndID=-1
+					IsIncidentField=false
+					IsEnforcedField=false
+					IsFssReference=false
+					IsForPML=false
+					UseAdaptiveIE=false
+					IncludeInPostproc=true
+				$end 'Rad1'
+				$begin '1'
+					ID=0
+					BoundType='Lumped Port'
+					Objects(25)
+					ParentBndID=-1
+					RenormalizeAllTerminals=true
+					DoDeembed=false
+					$begin 'Modes'
+						$begin 'Mode1'
+							ModeNum=1
+							UseIntLine=true
+							$begin 'IntLine'
+								$begin 'GeometryPosition'
+									IsAttachedToEntity=true
+									EntityID=26
+									PositionType='EdgeCenter'
+									UParam=0
+									VParam=0
+									XPosition='0'
+									YPosition='0'
+									ZPosition='0'
+								$end 'GeometryPosition'
+								$begin 'GeometryPosition'
+									IsAttachedToEntity=true
+									EntityID=28
+									PositionType='EdgeCenter'
+									UParam=0
+									VParam=0
+									XPosition='0'
+									YPosition='0'
+									ZPosition='0'
+								$end 'GeometryPosition'
+							$end 'IntLine'
+							CharImp='Zpi'
+							AlignmentGroup=0
+							RenormImp='50ohm'
+						$end 'Mode1'
+					$end 'Modes'
+					ShowReporterFilter=false
+					ReporterFilter(true)
+					FullResistance='50ohm'
+					FullReactance='0ohm'
+				$end '1'
+			$end 'Boundaries'
+			$begin 'ProductSpecificData'
+				$begin 'PMLData'
+					$begin 'PMLGroups'
+					$end 'PMLGroups'
+				$end 'PMLData'
+				$begin 'SortOrder'
+					Port[1: -1]
+					Terminal[1: -1]
+				$end 'SortOrder'
+			$end 'ProductSpecificData'
+		$end 'BoundarySetup'
+		$begin 'ArrayDefinition'
+			NextUniqueID=0
+			MoveBackwards=false
+		$end 'ArrayDefinition'
+		$begin 'MeshSetup'
+			$begin 'MeshSettings'
+				$begin 'GlobalSurfApproximation'
+					SurfDevChoice=0
+					NormalDevChoice=1
+					AspectRatioChoice=1
+					PullToTrueSurf=false
+					SetFacePreservationLevel=0
+				$end 'GlobalSurfApproximation'
+				MeshMethod='Auto'
+			$end 'MeshSettings'
+			$begin 'MeshOperations'
+				NextUniqueID=0
+				MoveBackwards=false
+			$end 'MeshOperations'
+		$end 'MeshSetup'
+		$begin 'AnalysisSetup'
+			$begin 'HfssGlobalData'
+				NextUniqueID=0
+				MoveBackwards=false
+			$end 'HfssGlobalData'
+			$begin 'SolveSetups'
+				NextUniqueID=1
+				MoveBackwards=false
+				$begin 'Setup1'
+					ID=0
+					SetupType='HfssDriven'
+					Frequency='29.9792GHz'
+					PortsOnly=false
+					MaxDeltaS=0.02
+					UseMatrixConv=false
+					MaximumPasses=6
+					MinimumPasses=1
+					MinimumConvergedPasses=1
+					PercentRefinement=30
+					IsEnabled=true
+					BasisOrder=1
+					UseIterativeSolver=false
+					DoLambdaRefine=true
+					DoMaterialLambda=true
+					SetLambdaTarget=false
+					Target=0.3333
+					UseMaxTetIncrease=false
+					PortAccuracy=2
+					UseABCOnPort=false
+					SetPortMinMaxTri=false
+					PortMinTri=100
+					PortMaxTri=500
+					EnableSolverDomains=false
+					SaveRadFieldsOnly=false
+					SaveAnyFields=true
+					NoAdditionalRefinementOnImport=false
+					$begin 'Sweeps'
+						NextUniqueID=1
+						MoveBackwards=false
+						$begin 'Sweep'
+							ID=0
+							IsEnabled=true
+							SetupType='LinearCount'
+							StartValue='25GHz'
+							StopValue='35GHz'
+							Count=1000
+							Type='Fast'
+							SaveFields=true
+							GenerateFieldsForAllFreqs=false
+							ExtrapToDC=false
+						$end 'Sweep'
+					$end 'Sweeps'
+					DerivativesOnlyForLastPass=false
+				$end 'Setup1'
+			$end 'SolveSetups'
+		$end 'AnalysisSetup'
+		$begin 'Optimetrics'
+			$begin 'OptimetricsSetups'
+				NextUniqueID=0
+				MoveBackwards=false
+			$end 'OptimetricsSetups'
+		$end 'Optimetrics'
+		$begin 'Solutions'
+			FieldType='NoIncidentWave'
+			IncludePortPostProcessing=false
+			SourceEntry(ID=0, Index=0, Terminal=false, Terminated=false, Magnitude='1', Phase='0deg')
+			$begin 'Contexts'
+				NextUniqueID=1
+				MoveBackwards=false
+			$end 'Contexts'
+		$end 'Solutions'
+		$begin 'PortFieldDisplay'
+			$begin 'PortFieldDisplay'
+				ScaleFactor=5
+				Solution='Setup1 : LastAdaptive'
+				Frequency='29.9792GHz'
+			$end 'PortFieldDisplay'
+		$end 'PortFieldDisplay'
+		$begin 'FieldsReporter'
+			$begin 'FieldsCalculator'
+				Line_Discretization=1000
+			$end 'FieldsCalculator'
+			$begin 'PlotDefaults'
+				Default_SolutionId=14
+				Default_PlotFolder='Automatic'
+				Default_Phase='0deg'
+				Default_Freq='29.9792GHz'
+			$end 'PlotDefaults'
+			$begin 'FieldsPlotManagerID'
+				NextUniqueID=0
+				MoveBackwards=false
+				NumQuantityType=0
+				NumPlots=0
+			$end 'FieldsPlotManagerID'
+			$begin 'Report3dInGeomWnd'
+				Report3dNum=1
+				$begin 'Report3dPlot_1'
+					ReportID=3
+					Transparency=0
+					ScaleFactor=0.5
+					Visible=false
+					CoordSys=-1
+				$end 'Report3dPlot_1'
+			$end 'Report3dInGeomWnd'
+		$end 'FieldsReporter'
+		$begin 'RadField'
+			$begin 'FarFieldSetups'
+				NextUniqueID=5
+				MoveBackwards=false
+				$begin 'Infinite Sphere1'
+					Type='Infinite Sphere'
+					ID=0
+					VersionID=4
+					UseCustomRadiationSurface=false
+					ThetaStart='0deg'
+					ThetaStop='180deg'
+					ThetaStep='10deg'
+					PhiStart='0deg'
+					PhiStop='360deg'
+					PhiStep='10deg'
+					UseLocalCS=false
+				$end 'Infinite Sphere1'
+			$end 'FarFieldSetups'
+			$begin 'ArraySetup'
+				UseOption='RegularArray'
+				$begin 'RegularArray'
+					NumUCells='1'
+					NumVCells='5'
+					CellUDist='2.5mm'
+					CellVDist='0mm'
+					UDirnX='1'
+					UDirnY='0'
+					UDirnZ='0'
+					VDirnX='0'
+					VDirnY='1'
+					VDirnZ='0'
+					FirstCellPosX='0mm'
+					FirstCellPosY='0mm'
+					FirstCellPosZ='0mm'
+					Behavior='UsePhaseDifference'
+					ScanAnglePhi='45deg'
+					ScanAngleTheta='0'
+					UDirnPhaseShift='0deg'
+					VDirnPhaseShift='0deg'
+				$end 'RegularArray'
+				$begin 'CustomArray'
+					NumCells=0
+					$begin 'Cell'
+					$end 'Cell'
+				$end 'CustomArray'
+			$end 'ArraySetup'
+			$begin 'NearFieldSetups'
+				NextUniqueID=5
+				MoveBackwards=false
+			$end 'NearFieldSetups'
+			RadFieldComputationVersion=1.4
+			RadfieldHeaderFile='RAD7B94451215699155191.tmp'
+		$end 'RadField'
+		$begin 'SolutionManager'
+			$begin 'SimSetup'
+				TypeName='BaseSetup'
+				ID=12
+				Name='Setup1'
+				$begin 'Solution'
+					ID=13
+					Name='AdaptivePass'
+					$begin 'SimDataExtractor'
+						$begin 'Sweeps'
+							$begin 'Sweep'
+								Variable='Pass'
+								Column='1;2;3;4;5;6'
+								Units=''
+							$end 'Sweep'
+							$begin 'Sweep'
+								Variable='Freq'
+								Column='29.9792GHz'
+								Units='GHz'
+							$end 'Sweep'
+							$begin 'PostprocessSweep'
+								Variable='NormalizedDistance'
+								RegularSweep=1
+								Units=''
+								Minimum=0
+								Maximum=1
+								Increment=0.01
+								CreateIndexedSubsweepFlag=false
+							$end 'PostprocessSweep'
+							$begin 'PostprocessSweep'
+								Variable='Phi'
+								RegularSweep=1
+								Units='deg'
+								Minimum=0
+								Maximum=6.28318530717959
+								Increment=0.0872664625997165
+								CreateIndexedSubsweepFlag=false
+							$end 'PostprocessSweep'
+							$begin 'PostprocessSweep'
+								Variable='Theta'
+								RegularSweep=1
+								Units='deg'
+								Minimum=0
+								Maximum=6.28318530717959
+								Increment=0.0872664625997165
+								CreateIndexedSubsweepFlag=false
+							$end 'PostprocessSweep'
+							$begin 'PostprocessSweep'
+								Variable='Phase'
+								RegularSweep=1
+								Units='deg'
+								Minimum=0
+								Maximum=6.28318530717959
+								Increment=0.0872664625997165
+								CreateIndexedSubsweepFlag=false
+							$end 'PostprocessSweep'
+						$end 'Sweeps'
+						IsPortOnly=false
+					$end 'SimDataExtractor'
+				$end 'Solution'
+				$begin 'Solution'
+					ID=14
+					Name='LastAdaptive'
+					$begin 'SimDataExtractor'
+						SimValue('rETotal', 1, 67, false, SimValueID=59, 0, 0, 2, 0, false, false, 0, 1, 0, 1, 1, '', 0, 0)
+						SimValue('GainTotal', 1, 90, true, SimValueID=60, 0, 0, 2, 0, false, false, 0, 1, 0, 1, 1, '', 0, 0)
+						$begin 'Sweeps'
+							$begin 'Sweep'
+								Variable='Freq'
+								Column='29.9792GHz'
+								Units='GHz'
+							$end 'Sweep'
+							$begin 'PostprocessSweep'
+								Variable='NormalizedDistance'
+								RegularSweep=1
+								Units=''
+								Minimum=0
+								Maximum=1
+								Increment=0.01
+								CreateIndexedSubsweepFlag=false
+							$end 'PostprocessSweep'
+							$begin 'PostprocessSweep'
+								Variable='Phi'
+								RegularSweep=1
+								Units='deg'
+								Minimum=0
+								Maximum=6.28318530717959
+								Increment=0.0872664625997165
+								CreateIndexedSubsweepFlag=false
+							$end 'PostprocessSweep'
+							$begin 'PostprocessSweep'
+								Variable='Theta'
+								RegularSweep=1
+								Units='deg'
+								Minimum=0
+								Maximum=6.28318530717959
+								Increment=0.0872664625997165
+								CreateIndexedSubsweepFlag=false
+							$end 'PostprocessSweep'
+							$begin 'PostprocessSweep'
+								Variable='Phase'
+								RegularSweep=1
+								Units='deg'
+								Minimum=0
+								Maximum=6.28318530717959
+								Increment=0.0872664625997165
+								CreateIndexedSubsweepFlag=false
+							$end 'PostprocessSweep'
+							$begin 'Sweep'
+								Variable='lambda'
+								Column='10mm'
+								Units='mm'
+							$end 'Sweep'
+							$begin 'Sweep'
+								Variable='dip_rad'
+								Column='0.05mm'
+								Units='mm'
+							$end 'Sweep'
+							$begin 'Sweep'
+								Variable='radition_rad'
+								Column='2.55mm'
+								Units='mm'
+							$end 'Sweep'
+							$begin 'Sweep'
+								Variable='res_length'
+								Column='4.75mm'
+								Units='mm'
+							$end 'Sweep'
+							$begin 'Sweep'
+								Variable='gap_src'
+								Column='0.0125mm'
+								Units='mm'
+							$end 'Sweep'
+							$begin 'Sweep'
+								Variable='dip_length'
+								Column='2.36875mm'
+								Units='mm'
+							$end 'Sweep'
+							$begin 'Sweep'
+								Variable='radition_height'
+								Column='3.375mm'
+								Units='mm'
+							$end 'Sweep'
+						$end 'Sweeps'
+						IsPortOnly=false
+					$end 'SimDataExtractor'
+				$end 'Solution'
+				$begin 'Solution'
+					ID=18
+					Name='Sweep'
+					$begin 'SimDataExtractor'
+						SimValue('S(1,1)', 2, 90, false, SimValueID=58, 3, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
+						$begin 'Sweeps'
+							$begin 'PostprocessSweep'
+								Variable='Freq'
+								RegularSweep=1
+								Units='GHz'
+								Minimum=25000000000
+								Maximum=35000000000
+								Increment=10010010.01001
+								CreateIndexedSubsweepFlag=false
+							$end 'PostprocessSweep'
+							$begin 'PostprocessSweep'
+								Variable='NormalizedDistance'
+								RegularSweep=1
+								Units=''
+								Minimum=0
+								Maximum=1
+								Increment=0.01
+								CreateIndexedSubsweepFlag=false
+							$end 'PostprocessSweep'
+							$begin 'PostprocessSweep'
+								Variable='Phi'
+								RegularSweep=1
+								Units='deg'
+								Minimum=0
+								Maximum=6.28318530717959
+								Increment=0.0872664625997165
+								CreateIndexedSubsweepFlag=false
+							$end 'PostprocessSweep'
+							$begin 'PostprocessSweep'
+								Variable='Theta'
+								RegularSweep=1
+								Units='deg'
+								Minimum=0
+								Maximum=6.28318530717959
+								Increment=0.0872664625997165
+								CreateIndexedSubsweepFlag=false
+							$end 'PostprocessSweep'
+							$begin 'PostprocessSweep'
+								Variable='Phase'
+								RegularSweep=1
+								Units='deg'
+								Minimum=0
+								Maximum=6.28318530717959
+								Increment=0.0872664625997165
+								CreateIndexedSubsweepFlag=false
+							$end 'PostprocessSweep'
+							$begin 'Sweep'
+								Variable='lambda'
+								Column='10mm'
+								Units='mm'
+							$end 'Sweep'
+							$begin 'Sweep'
+								Variable='dip_rad'
+								Column='0.05mm'
+								Units='mm'
+							$end 'Sweep'
+							$begin 'Sweep'
+								Variable='radition_rad'
+								Column='2.55mm'
+								Units='mm'
+							$end 'Sweep'
+							$begin 'Sweep'
+								Variable='res_length'
+								Column='4.75mm'
+								Units='mm'
+							$end 'Sweep'
+							$begin 'Sweep'
+								Variable='gap_src'
+								Column='0.0125mm'
+								Units='mm'
+							$end 'Sweep'
+							$begin 'Sweep'
+								Variable='dip_length'
+								Column='2.36875mm'
+								Units='mm'
+							$end 'Sweep'
+							$begin 'Sweep'
+								Variable='radition_height'
+								Column='3.375mm'
+								Units='mm'
+							$end 'Sweep'
+						$end 'Sweeps'
+						IsPortOnly=false
+					$end 'SimDataExtractor'
+				$end 'Solution'
+			$end 'SimSetup'
+			$begin 'Version ID Map'
+				V=9
+				$begin 'Setup'
+					N='Setup1'
+					V=0
+					Soln(N='AdaptivePass', V=0)
+					Soln(N='LastAdaptive', V=0)
+					Soln(N='Sweep', V=0)
+				$end 'Setup'
+			$end 'Version ID Map'
+			$begin 'ID Map'
+				$begin 'Setup'
+					N='Setup1'
+					I=12
+					Soln(N='AdaptivePass', I=13)
+					Soln(N='LastAdaptive', I=14)
+					Soln(N='Sweep', I=18)
+				$end 'Setup'
+			$end 'ID Map'
+		$end 'SolutionManager'
+		$begin 'UserDefinedSolutionMgr'
+			NextUniqueID=1000000
+			MoveBackwards=false
+		$end 'UserDefinedSolutionMgr'
+		$begin 'DatasetSolutionMgr'
+			NextUniqueID=2000000
+			MoveBackwards=false
+		$end 'DatasetSolutionMgr'
+		Notes=$begin_cdata$		$end_cdata$
+		$begin 'AnimationSetups'
+		$end 'AnimationSetups'
+		CacheHeaderFile='HDR586E9928157172898335.tmp'
+	$end 'HFSSModel'
+	$begin 'DataInstances'
+		$begin 'Instance'
+			DesignEditor='HFSSDesign2'
+			$begin 'HfssDesignInstance'
+				DesignInstanceID=3
+				$begin 'WindowPosition'
+					$begin 'EditorWindow'
+						'3D Modeler'(Editor3d(View(WindowPos(5, -1, -1, -8, -31, 26, 26, 1251, 352), OrientationMatrix(-0.0621882118284702, -0.0997229740023613, 0.157675877213478, 0, 0.186564609408379, -0.0332409963011742, 0.0525586307048798, 0, 0, 0.166204988956451, 0.105117253959179, 0, 0, 0, -5.69086885452271, 1, 0, -3.87985873222351, 3.87985873222351, -1, 1, 0.834249973297119, 10.5474872589111), Drawings[4: 'Cylinder1', 'Cylinder1_1', 'Rectangle1', 'Cylinder2'], 'View Data'('Render Mode'=1, 'Show Ruler'=1), ClipPlanes(ClipPlaneOptions(DisableWhenDrawingNewPlane=true, ForceOpqaueForUnclipped=false, ShowClipped=false, Transparency=0, HandleColor=16776960)))))
+					$end 'EditorWindow'
+				$end 'WindowPosition'
+				$begin 'ReportSetup'
+					$begin 'ReportManager'
+						$begin 'Reports'
+							$begin 'XY Plot 1'
+								ReportID=1
+								ReportName='XY Plot 1'
+								$begin 'TraceDef'
+									TraceDefinitionType='TraceDefinition'
+									$begin 'DesignSolnDefn'
+										$begin 'DESIGN_SOLUTION_SIM_VALUE_CONTEXT'
+											DesignID=2
+											SolutionID=18
+											$begin 'REPORT_TYPE_SIM_VALUE_CONTEXT'
+												ReportType=0
+												SimValueContext(3, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
+											$end 'REPORT_TYPE_SIM_VALUE_CONTEXT'
+										$end 'DESIGN_SOLUTION_SIM_VALUE_CONTEXT'
+									$end 'DesignSolnDefn'
+									ID=0
+									VersionID=1
+									Name='dB(S(1,1))'
+									TieNameToExpr=true
+									$begin 'Components'
+										$begin 'TraceComponentDefinition'
+											Expr='Freq'
+										$end 'TraceComponentDefinition'
+										$begin 'TraceComponentDefinition'
+											Expr='dB(S(1,1))'
+										$end 'TraceComponentDefinition'
+									$end 'Components'
+									$begin 'ExtendedTraceInfo'
+										NumPoints=0
+										TraceType=0
+										Offset=0
+										XLabel=''
+										SamplingPeriod='0'
+										SamplingPeriodOffset='0'
+										AutoDelay=true
+										DelayValue='0ps'
+										AutoCompCrossAmplitude=true
+										CrossingAmplitude='0mV'
+										YAxis=1
+										AutoCompEyeMeasurementPoint=true
+										EyeMeasurementPoint='0ps'
+									$end 'ExtendedTraceInfo'
+									$begin 'TraceFamiliesDisplayDefinition'
+										DisplayFamiliesType='DisplayAll'
+									$end 'TraceFamiliesDisplayDefinition'
+									$begin 'PointsetDefinition'
+										$begin 'SubsweepDefParamsContainer'
+											$begin '0'
+												SubsweepType='Specifiable'
+												SubsweepChoiceType='All'
+												SweepVariableName='Freq'
+											$end '0'
+											$begin '1'
+												SubsweepType='Regular'
+												SubsweepChoiceType='Nominal'
+												SweepVariableName='lambda'
+											$end '1'
+											$begin '2'
+												SubsweepType='Regular'
+												SubsweepChoiceType='Nominal'
+												SweepVariableName='gap_src'
+											$end '2'
+										$end 'SubsweepDefParamsContainer'
+										FamilyBlock()
+									$end 'PointsetDefinition'
+									DesignInstanceID=3
+								$end 'TraceDef'
+							$end 'XY Plot 1'
+							$begin '3D Polar Plot 1'
+								ReportID=3
+								ReportName='3D Polar Plot 1'
+								$begin 'TraceDef'
+									TraceDefinitionType='TraceDefinition'
+									$begin 'DesignSolnDefn'
+										$begin 'DESIGN_SOLUTION_SIM_VALUE_CONTEXT'
+											DesignID=2
+											SolutionID=14
+											$begin 'REPORT_TYPE_SIM_VALUE_CONTEXT'
+												ReportType=3
+												SimValueContext(0, 0, 2, 0, false, false, 0, 1, 0, 1, 1, '', 0, 0)
+											$end 'REPORT_TYPE_SIM_VALUE_CONTEXT'
+										$end 'DESIGN_SOLUTION_SIM_VALUE_CONTEXT'
+									$end 'DesignSolnDefn'
+									ID=2
+									VersionID=5
+									Name='dB(GainTotal)'
+									TieNameToExpr=true
+									$begin 'Components'
+										$begin 'TraceComponentDefinition'
+											Expr='Phi'
+										$end 'TraceComponentDefinition'
+										$begin 'TraceComponentDefinition'
+											Expr='Theta'
+										$end 'TraceComponentDefinition'
+										$begin 'TraceComponentDefinition'
+											Expr='dB(GainTotal)'
+										$end 'TraceComponentDefinition'
+									$end 'Components'
+									$begin 'ExtendedTraceInfo'
+										NumPoints=0
+										TraceType=0
+										Offset=0
+										XLabel=''
+										SamplingPeriod='0'
+										SamplingPeriodOffset='0'
+										AutoDelay=true
+										DelayValue='0ps'
+										AutoCompCrossAmplitude=true
+										CrossingAmplitude='0mV'
+										YAxis=1
+										AutoCompEyeMeasurementPoint=true
+										EyeMeasurementPoint='0ps'
+									$end 'ExtendedTraceInfo'
+									$begin 'TraceFamiliesDisplayDefinition'
+										DisplayFamiliesType='DisplayAll'
+									$end 'TraceFamiliesDisplayDefinition'
+									$begin 'PointsetDefinition'
+										$begin 'SubsweepDefParamsContainer'
+											$begin '0'
+												SubsweepType='Regular'
+												SubsweepChoiceType='All'
+												SweepVariableName='Phi'
+											$end '0'
+											$begin '1'
+												SubsweepType='Regular'
+												SubsweepChoiceType='All'
+												SweepVariableName='Theta'
+											$end '1'
+											$begin '2'
+												SubsweepType='Regular'
+												SubsweepChoiceType='Selected'
+												SweepVariableName='Freq'
+												ColumnValues(29979200000)
+												ParameterType='DoubleParam'
+												Units='GHz'
+											$end '2'
+											$begin '3'
+												SubsweepType='Regular'
+												SubsweepChoiceType='Nominal'
+												SweepVariableName='lambda'
+											$end '3'
+											$begin '4'
+												SubsweepType='Regular'
+												SubsweepChoiceType='Nominal'
+												SweepVariableName='gap_src'
+											$end '4'
+										$end 'SubsweepDefParamsContainer'
+										FamilyBlock()
+									$end 'PointsetDefinition'
+									DesignInstanceID=3
+								$end 'TraceDef'
+							$end '3D Polar Plot 1'
+						$end 'Reports'
+						NextUniqueID=4
+						MoveBackwards=false
+						$begin 'NextVersID'
+							NextUniqueID=6
+							MoveBackwards=false
+						$end 'NextVersID'
+					$end 'ReportManager'
+					$begin 'Reports'
+						$begin 'XY Plot 1'
+							ReportID=1
+							$begin 'Report2D'
+								name='XY Plot 1'
+								ReportID=1
+								ReportType=0
+								DisplayType=1
+								Title=''
+								Domain=''
+								$begin 'Graph2DsV2'
+									$begin 'Graph2D'
+										TraceDefID=0
+										Type='Continuous'
+										Axis='Y1'
+									$end 'Graph2D'
+								$end 'Graph2DsV2'
+								$begin 'PlotDisplayDataManager'
+									NextUniqueID=49
+									MoveBackwards=false
+									$begin 'PlotHeaderDataSource'
+										CompanyName=''
+										ShowDesignName=true
+										ProjectFileName=''
+									$end 'PlotHeaderDataSource'
+									StockNameIDMap(AxisX=1, AxisY1=2, AxisY2=8, AxisY3=9, AxisY4=10, DeltaMarkerLegend=31, Grid=11, Header=0, Legend=5, MarkerLegend=29, XYHorizScroller=7)
+									$begin 'SourceList'
+										$begin 'ListItem'
+											$begin 'MarkerDataSource'
+												MarkerID=23
+												MarkerName='m1'
+												AttachedToDrawing=true
+												CurveID=21
+												CurveDefinition='Cartesian'
+												PrimarySweepValue='27.6826826826827GHz'
+											$end 'MarkerDataSource'
+										$end 'ListItem'
+										$begin 'ListItem'
+											$begin 'MarkerDataSource'
+												MarkerID=24
+												MarkerName='m2'
+												AttachedToDrawing=true
+												CurveID=21
+												CurveDefinition='Cartesian'
+												PrimarySweepValue='32.4674674674675GHz'
+											$end 'MarkerDataSource'
+										$end 'ListItem'
+										$begin 'ListItem'
+											$begin 'DeltaMarkerDataSource'
+												MarkerID=25
+												Marker1=23
+												Marker2=24
+											$end 'DeltaMarkerDataSource'
+										$end 'ListItem'
+										$begin 'ListItem'
+											$begin 'CartesianXMarkerDataSource'
+												CartesianXMarkerID=33
+												CursorName='MX1'
+												XValue=28414918414.9184
+											$end 'CartesianXMarkerDataSource'
+										$end 'ListItem'
+										$begin 'ListItem'
+											$begin 'CartesianXMarkerDataSource'
+												CartesianXMarkerID=35
+												CursorName='MX2'
+												XValue=31515151515.1515
+											$end 'CartesianXMarkerDataSource'
+										$end 'ListItem'
+										$begin 'ListItem'
+											$begin 'MarkerDataSource'
+												MarkerID=37
+												MarkerName='m3'
+												AttachedToDrawing=true
+												CurveID=21
+												CurveDefinition='Cartesian'
+												PrimarySweepValue='29.8648648648649GHz'
+											$end 'MarkerDataSource'
+										$end 'ListItem'
+										$begin 'ListItem'
+											$begin 'MarkerDataSource'
+												MarkerID=39
+												MarkerName='m4'
+												AttachedToDrawing=true
+												CurveID=21
+												CurveDefinition='Cartesian'
+												PrimarySweepValue='29.9149149149149GHz'
+											$end 'MarkerDataSource'
+										$end 'ListItem'
+									$end 'SourceList'
+									$begin 'DocAttributes'
+										$begin 'PlotAttributeStoreMap'
+											$begin 'MainMapItem'
+												$begin 'SubMapItem'
+													DataSourceID=11
+													$begin 'CartesianGridDescAttribute'
+														ShowXMinor=true
+														ShowYMinor=true
+														ShowXMajor=true
+														ShowYMajor=true
+														ShowBorder=true
+													$end 'CartesianGridDescAttribute'
+												$end 'SubMapItem'
+											$end 'MainMapItem'
+											$begin 'MainMapItem'
+												$begin 'SubMapItem'
+													DataSourceID=21
+													$begin 'CurveCartesianAttribute'
+														YAxis='Y1'
+													$end 'CurveCartesianAttribute'
+												$end 'SubMapItem'
+											$end 'MainMapItem'
+											$begin 'MainMapItem'
+												$begin 'SubMapItem'
+													DataSourceID=21
+													$begin 'CurveRenderAttribute'
+														$begin 'LineRenderAttribute'
+															LineStyle='Solid'
+															LineWidth=1
+															LineColor(R=255, G=0, B=0)
+														$end 'LineRenderAttribute'
+														TraceType='Continuous'
+														SymbolType='HorizontalLeftTriangle'
+														SymbolColor(R=0, G=25, B=185)
+														ShowSymbols=false
+														SymbolFrequency=15
+														ShowArrows=false
+													$end 'CurveRenderAttribute'
+												$end 'SubMapItem'
+											$end 'MainMapItem'
+											$begin 'MainMapItem'
+												$begin 'SubMapItem'
+													DataSourceID=0
+													$begin 'HeaderRenderAttribute'
+														$begin 'TitleFont'
+															$begin 'FontAttribute'
+																$begin 'Font'
+																	Height=-19
+																	Width=0
+																	Escapement=0
+																	Orientation=0
+																	Weight=400
+																	Italic=0
+																	Underline=0
+																	StrikeOut=0
+																	CharSet=0
+																	OutPrecision=7
+																	ClipPrecision=48
+																	Quality=6
+																	PitchAndFamily=0
+																	FaceName='Arial'
+																$end 'Font'
+																Color(R=0, G=0, B=0)
+															$end 'FontAttribute'
+														$end 'TitleFont'
+														$begin 'SubtitleFont'
+															$begin 'FontAttribute'
+																$begin 'Font'
+																	Height=-13
+																	Width=0
+																	Escapement=0
+																	Orientation=0
+																	Weight=400
+																	Italic=0
+																	Underline=0
+																	StrikeOut=0
+																	CharSet=0
+																	OutPrecision=7
+																	ClipPrecision=48
+																	Quality=6
+																	PitchAndFamily=0
+																	FaceName='Arial'
+																$end 'Font'
+																Color(R=0, G=0, B=0)
+															$end 'FontAttribute'
+														$end 'SubtitleFont'
+													$end 'HeaderRenderAttribute'
+												$end 'SubMapItem'
+											$end 'MainMapItem'
+											$begin 'MainMapItem'
+												$begin 'SubMapItem'
+													DataSourceID=5
+													$begin 'LegendRenderAttribute'
+														$begin 'LegendTableAttrib'
+															$begin 'TableRenderAttribute'
+																$begin 'TableFontAttrib'
+																	$begin 'FontAttribute'
+																		$begin 'Font'
+																			Height=-11
+																			Width=0
+																			Escapement=0
+																			Orientation=0
+																			Weight=400
+																			Italic=0
+																			Underline=0
+																			StrikeOut=0
+																			CharSet=0
+																			OutPrecision=7
+																			ClipPrecision=48
+																			Quality=6
+																			PitchAndFamily=0
+																			FaceName='Arial'
+																		$end 'Font'
+																		Color(R=0, G=0, B=0)
+																	$end 'FontAttribute'
+																$end 'TableFontAttrib'
+																$begin 'TableTitleFontAttrib'
+																	$begin 'FontAttribute'
+																		$begin 'Font'
+																			Height=-11
+																			Width=0
+																			Escapement=0
+																			Orientation=0
+																			Weight=400
+																			Italic=0
+																			Underline=0
+																			StrikeOut=0
+																			CharSet=0
+																			OutPrecision=7
+																			ClipPrecision=48
+																			Quality=6
+																			PitchAndFamily=0
+																			FaceName='Arial'
+																		$end 'Font'
+																		Color(R=0, G=0, B=0)
+																	$end 'FontAttribute'
+																$end 'TableTitleFontAttrib'
+																TableBorderLineWidth=1
+																TableBorderLineColor=0
+																TableGridLineWidth=1
+																TableGridLineColor=12632256
+																TableBackgroundColor=16777215
+																TableHeaderBackgroundColor=14408667
+															$end 'TableRenderAttribute'
+														$end 'LegendTableAttrib'
+														ShowTraceName=true
+														ShowSolutionName=true
+														ShowVariationKey=true
+														DockMode='None'
+													$end 'LegendRenderAttribute'
+												$end 'SubMapItem'
+											$end 'MainMapItem'
+											$begin 'MainMapItem'
+												$begin 'SubMapItem'
+													DataSourceID=1
+													$begin 'LineAxisRenderAttribute'
+														DecimalFieldWidth=3
+														DecimalFieldPrecision=2
+														ManualTitle=''
+														AxisColor(R=0, G=0, B=0)
+														MinScale=0
+														MaxScale=1
+														TickSpacing=1
+														ManualUnits=false
+														Units='mm'
+														AxisScale='Linear'
+														NumberFormat='Auto'
+														$begin 'TextFont'
+															$begin 'FontAttribute'
+																$begin 'Font'
+																	Height=-12
+																	Width=0
+																	Escapement=0
+																	Orientation=0
+																	Weight=400
+																	Italic=0
+																	Underline=0
+																	StrikeOut=0
+																	CharSet=0
+																	OutPrecision=7
+																	ClipPrecision=48
+																	Quality=6
+																	PitchAndFamily=0
+																	FaceName='Arial'
+																$end 'Font'
+																Color(R=0, G=0, B=0)
+															$end 'FontAttribute'
+														$end 'TextFont'
+														InfMapMode=false
+														InfMapValue=1.79769313486232e+306
+														AutoRangeMin=true
+														AutoRangeMax=true
+														AutoSpacing=true
+														kNumMinorDivisions=5
+														ShowAxisTitle=true
+														ShowAxisUnits=true
+														vwm='FullWnd'
+														viewWndWd=#nan
+														ActivateMargins=true
+														MarginPercent=0
+													$end 'LineAxisRenderAttribute'
+												$end 'SubMapItem'
+												$begin 'SubMapItem'
+													DataSourceID=2
+													$begin 'LineAxisRenderAttribute'
+														DecimalFieldWidth=4
+														DecimalFieldPrecision=2
+														ManualTitle=''
+														AxisColor(R=0, G=0, B=0)
+														MinScale=-15
+														MaxScale=-2.5
+														TickSpacing=2
+														ManualUnits=false
+														Units=''
+														AxisScale='Linear'
+														NumberFormat='Auto'
+														$begin 'TextFont'
+															$begin 'FontAttribute'
+																$begin 'Font'
+																	Height=-12
+																	Width=0
+																	Escapement=0
+																	Orientation=0
+																	Weight=400
+																	Italic=0
+																	Underline=0
+																	StrikeOut=0
+																	CharSet=0
+																	OutPrecision=7
+																	ClipPrecision=48
+																	Quality=6
+																	PitchAndFamily=0
+																	FaceName='Arial'
+																$end 'Font'
+																Color(R=0, G=0, B=0)
+															$end 'FontAttribute'
+														$end 'TextFont'
+														InfMapMode=false
+														InfMapValue=30
+														AutoRangeMin=true
+														AutoRangeMax=true
+														AutoSpacing=true
+														kNumMinorDivisions=5
+														ShowAxisTitle=true
+														ShowAxisUnits=true
+														vwm='FullWnd'
+														viewWndWd=#nan
+														ActivateMargins=true
+														MarginPercent=0
+													$end 'LineAxisRenderAttribute'
+												$end 'SubMapItem'
+												$begin 'SubMapItem'
+													DataSourceID=8
+													$begin 'LineAxisRenderAttribute'
+														DecimalFieldWidth=3
+														DecimalFieldPrecision=2
+														ManualTitle=''
+														AxisColor(R=0, G=0, B=0)
+														MinScale=0
+														MaxScale=1
+														TickSpacing=1
+														ManualUnits=false
+														Units='mm'
+														AxisScale='Linear'
+														NumberFormat='Auto'
+														$begin 'TextFont'
+															$begin 'FontAttribute'
+																$begin 'Font'
+																	Height=-12
+																	Width=0
+																	Escapement=0
+																	Orientation=0
+																	Weight=400
+																	Italic=0
+																	Underline=0
+																	StrikeOut=0
+																	CharSet=0
+																	OutPrecision=7
+																	ClipPrecision=48
+																	Quality=6
+																	PitchAndFamily=0
+																	FaceName='Arial'
+																$end 'Font'
+																Color(R=0, G=0, B=0)
+															$end 'FontAttribute'
+														$end 'TextFont'
+														InfMapMode=false
+														InfMapValue=1.79769313486232e+306
+														AutoRangeMin=true
+														AutoRangeMax=true
+														AutoSpacing=true
+														kNumMinorDivisions=5
+														ShowAxisTitle=true
+														ShowAxisUnits=true
+														vwm='FullWnd'
+														viewWndWd=#nan
+														ActivateMargins=true
+														MarginPercent=0
+													$end 'LineAxisRenderAttribute'
+												$end 'SubMapItem'
+												$begin 'SubMapItem'
+													DataSourceID=9
+													$begin 'LineAxisRenderAttribute'
+														DecimalFieldWidth=3
+														DecimalFieldPrecision=2
+														ManualTitle=''
+														AxisColor(R=0, G=0, B=0)
+														MinScale=0
+														MaxScale=1
+														TickSpacing=1
+														ManualUnits=false
+														Units='mm'
+														AxisScale='Linear'
+														NumberFormat='Auto'
+														$begin 'TextFont'
+															$begin 'FontAttribute'
+																$begin 'Font'
+																	Height=-12
+																	Width=0
+																	Escapement=0
+																	Orientation=0
+																	Weight=400
+																	Italic=0
+																	Underline=0
+																	StrikeOut=0
+																	CharSet=0
+																	OutPrecision=7
+																	ClipPrecision=48
+																	Quality=6
+																	PitchAndFamily=0
+																	FaceName='Arial'
+																$end 'Font'
+																Color(R=0, G=0, B=0)
+															$end 'FontAttribute'
+														$end 'TextFont'
+														InfMapMode=false
+														InfMapValue=1.79769313486232e+306
+														AutoRangeMin=true
+														AutoRangeMax=true
+														AutoSpacing=true
+														kNumMinorDivisions=5
+														ShowAxisTitle=true
+														ShowAxisUnits=true
+														vwm='FullWnd'
+														viewWndWd=#nan
+														ActivateMargins=true
+														MarginPercent=0
+													$end 'LineAxisRenderAttribute'
+												$end 'SubMapItem'
+												$begin 'SubMapItem'
+													DataSourceID=10
+													$begin 'LineAxisRenderAttribute'
+														DecimalFieldWidth=3
+														DecimalFieldPrecision=2
+														ManualTitle=''
+														AxisColor(R=0, G=0, B=0)
+														MinScale=0
+														MaxScale=1
+														TickSpacing=1
+														ManualUnits=false
+														Units='mm'
+														AxisScale='Linear'
+														NumberFormat='Auto'
+														$begin 'TextFont'
+															$begin 'FontAttribute'
+																$begin 'Font'
+																	Height=-12
+																	Width=0
+																	Escapement=0
+																	Orientation=0
+																	Weight=400
+																	Italic=0
+																	Underline=0
+																	StrikeOut=0
+																	CharSet=0
+																	OutPrecision=7
+																	ClipPrecision=48
+																	Quality=6
+																	PitchAndFamily=0
+																	FaceName='Arial'
+																$end 'Font'
+																Color(R=0, G=0, B=0)
+															$end 'FontAttribute'
+														$end 'TextFont'
+														InfMapMode=false
+														InfMapValue=1.79769313486232e+306
+														AutoRangeMin=true
+														AutoRangeMax=true
+														AutoSpacing=true
+														kNumMinorDivisions=5
+														ShowAxisTitle=true
+														ShowAxisUnits=true
+														vwm='FullWnd'
+														viewWndWd=#nan
+														ActivateMargins=true
+														MarginPercent=0
+													$end 'LineAxisRenderAttribute'
+												$end 'SubMapItem'
+											$end 'MainMapItem'
+										$end 'PlotAttributeStoreMap'
+									$end 'DocAttributes'
+									$begin 'DocDefaultAttributes'
+										$begin 'PlotAttributeStoreMap'
+										$end 'PlotAttributeStoreMap'
+									$end 'DocDefaultAttributes'
+									$begin 'PerViewPlotAttributeStoreMap'
+										$begin 'MapItem'
+											ItemID=20
+											$begin 'PlotAttributeStoreMap'
+												$begin 'MainMapItem'
+													$begin 'SubMapItem'
+														DataSourceID=4
+														$begin 'BasicLayoutAttribute'
+															$begin 'LayoutRect'
+																Top=786
+																Left=570
+																Bottom=9406
+																Right=8481
+															$end 'LayoutRect'
+														$end 'BasicLayoutAttribute'
+													$end 'SubMapItem'
+													$begin 'SubMapItem'
+														DataSourceID=12
+														$begin 'BasicLayoutAttribute'
+															$begin 'LayoutRect'
+																Top=786
+																Left=570
+																Bottom=9406
+																Right=8481
+															$end 'LayoutRect'
+														$end 'BasicLayoutAttribute'
+													$end 'SubMapItem'
+													$begin 'SubMapItem'
+														DataSourceID=19
+														$begin 'BasicLayoutAttribute'
+															$begin 'LayoutRect'
+																Top=75
+																Left=75
+																Bottom=9925
+																Right=433
+															$end 'LayoutRect'
+														$end 'BasicLayoutAttribute'
+													$end 'SubMapItem'
+												$end 'MainMapItem'
+												$begin 'MainMapItem'
+													$begin 'SubMapItem'
+														DataSourceID=15
+														$begin 'CartesianAxisLayoutAttribute'
+															$begin 'AxisRect'
+																Top=75
+																Left=8481
+																Bottom=9925
+																Right=9169
+															$end 'AxisRect'
+															$begin 'GridRect'
+																Top=786
+																Left=570
+																Bottom=9406
+																Right=8481
+															$end 'GridRect'
+														$end 'CartesianAxisLayoutAttribute'
+													$end 'SubMapItem'
+													$begin 'SubMapItem'
+														DataSourceID=16
+														$begin 'CartesianAxisLayoutAttribute'
+															$begin 'AxisRect'
+																Top=75
+																Left=458
+																Bottom=785
+																Right=8481
+															$end 'AxisRect'
+															$begin 'GridRect'
+																Top=786
+																Left=570
+																Bottom=9406
+																Right=8481
+															$end 'GridRect'
+														$end 'CartesianAxisLayoutAttribute'
+													$end 'SubMapItem'
+												$end 'MainMapItem'
+												$begin 'MainMapItem'
+													$begin 'SubMapItem'
+														DataSourceID=4
+														$begin 'CartesianCurveGroupLayoutAttribute'
+															X_spc=1000000000
+															X_fwd=4
+															X_fpr=2
+															Y1_spc=2
+															Y1_fwd=4
+															Y1_fpr=2
+														$end 'CartesianCurveGroupLayoutAttribute'
+													$end 'SubMapItem'
+												$end 'MainMapItem'
+												$begin 'MainMapItem'
+													$begin 'SubMapItem'
+														DataSourceID=34
+														$begin 'CartesianXMarkerLayoutAttribute'
+															TextBoxMaxY=9253
+															TextBoxHeight=336
+															LineMaxYXInGrid=570
+															LineMaxYXOutOfGrid=8481
+														$end 'CartesianXMarkerLayoutAttribute'
+													$end 'SubMapItem'
+													$begin 'SubMapItem'
+														DataSourceID=36
+														$begin 'CartesianXMarkerLayoutAttribute'
+															TextBoxMaxY=9589
+															TextBoxHeight=336
+															LineMaxYXInGrid=570
+															LineMaxYXOutOfGrid=8481
+														$end 'CartesianXMarkerLayoutAttribute'
+													$end 'SubMapItem'
+												$end 'MainMapItem'
+												$begin 'MainMapItem'
+													$begin 'SubMapItem'
+														DataSourceID=6
+														$begin 'DockableOverlayLayoutAttribute'
+															$begin 'Dock_0'
+																$begin 'OverlayLayoutAttribute'
+																	$begin 'BoundingRect'
+																		Top=4850
+																		Left=533
+																		Bottom=9850
+																		Right=8033
+																	$end 'BoundingRect'
+																	ModifySize=false
+																	ModifyPosition=false
+																$end 'OverlayLayoutAttribute'
+															$end 'Dock_0'
+															$begin 'Dock_1'
+																$begin 'OverlayLayoutAttribute'
+																	$begin 'BoundingRect'
+																		Top=5000
+																		Left=0
+																		Bottom=10000
+																		Right=10000
+																	$end 'BoundingRect'
+																	ModifySize=false
+																	ModifyPosition=false
+																$end 'OverlayLayoutAttribute'
+															$end 'Dock_1'
+															$begin 'Dock_2'
+																$begin 'OverlayLayoutAttribute'
+																	$begin 'BoundingRect'
+																		Top=0
+																		Left=0
+																		Bottom=5000
+																		Right=10000
+																	$end 'BoundingRect'
+																	ModifySize=false
+																	ModifyPosition=false
+																$end 'OverlayLayoutAttribute'
+															$end 'Dock_2'
+														$end 'DockableOverlayLayoutAttribute'
+													$end 'SubMapItem'
+												$end 'MainMapItem'
+												$begin 'MainMapItem'
+													$begin 'SubMapItem'
+														DataSourceID=30
+														$begin 'OverlayLayoutAttribute'
+															$begin 'BoundingRect'
+																Top=75
+																Left=75
+																Bottom=4075
+																Right=4075
+															$end 'BoundingRect'
+															ModifySize=false
+															ModifyPosition=false
+														$end 'OverlayLayoutAttribute'
+													$end 'SubMapItem'
+													$begin 'SubMapItem'
+														DataSourceID=32
+														$begin 'OverlayLayoutAttribute'
+															$begin 'BoundingRect'
+																Top=150
+																Left=5850
+																Bottom=4150
+																Right=9850
+															$end 'BoundingRect'
+															ModifySize=false
+															ModifyPosition=false
+														$end 'OverlayLayoutAttribute'
+													$end 'SubMapItem'
+												$end 'MainMapItem'
+											$end 'PlotAttributeStoreMap'
+											PlotType=1
+										$end 'MapItem'
+										$begin 'MapItem'
+											ItemID=48
+											$begin 'PlotAttributeStoreMap'
+												$begin 'MainMapItem'
+													$begin 'SubMapItem'
+														DataSourceID=4
+														$begin 'BasicLayoutAttribute'
+															$begin 'LayoutRect'
+																Top=665
+																Left=563
+																Bottom=9502
+																Right=8501
+															$end 'LayoutRect'
+														$end 'BasicLayoutAttribute'
+													$end 'SubMapItem'
+													$begin 'SubMapItem'
+														DataSourceID=12
+														$begin 'BasicLayoutAttribute'
+															$begin 'LayoutRect'
+																Top=665
+																Left=563
+																Bottom=9502
+																Right=8501
+															$end 'LayoutRect'
+														$end 'BasicLayoutAttribute'
+													$end 'SubMapItem'
+													$begin 'SubMapItem'
+														DataSourceID=19
+														$begin 'BasicLayoutAttribute'
+															$begin 'LayoutRect'
+																Top=75
+																Left=75
+																Bottom=9925
+																Right=428
+															$end 'LayoutRect'
+														$end 'BasicLayoutAttribute'
+													$end 'SubMapItem'
+												$end 'MainMapItem'
+												$begin 'MainMapItem'
+													$begin 'SubMapItem'
+														DataSourceID=15
+														$begin 'CartesianAxisLayoutAttribute'
+															$begin 'AxisRect'
+																Top=75
+																Left=8501
+																Bottom=9925
+																Right=9181
+															$end 'AxisRect'
+															$begin 'GridRect'
+																Top=665
+																Left=563
+																Bottom=9502
+																Right=8501
+															$end 'GridRect'
+														$end 'CartesianAxisLayoutAttribute'
+													$end 'SubMapItem'
+													$begin 'SubMapItem'
+														DataSourceID=16
+														$begin 'CartesianAxisLayoutAttribute'
+															$begin 'AxisRect'
+																Top=75
+																Left=453
+																Bottom=664
+																Right=8501
+															$end 'AxisRect'
+															$begin 'GridRect'
+																Top=665
+																Left=563
+																Bottom=9502
+																Right=8501
+															$end 'GridRect'
+														$end 'CartesianAxisLayoutAttribute'
+													$end 'SubMapItem'
+												$end 'MainMapItem'
+												$begin 'MainMapItem'
+													$begin 'SubMapItem'
+														DataSourceID=4
+														$begin 'CartesianCurveGroupLayoutAttribute'
+															X_spc=1000000000
+															X_fwd=4
+															X_fpr=2
+															Y1_spc=2
+															Y1_fwd=4
+															Y1_fpr=2
+														$end 'CartesianCurveGroupLayoutAttribute'
+													$end 'SubMapItem'
+												$end 'MainMapItem'
+												$begin 'MainMapItem'
+													$begin 'SubMapItem'
+														DataSourceID=46
+														$begin 'CartesianXMarkerLayoutAttribute'
+															TextBoxMaxY=9263
+															TextBoxHeight=331
+															LineMaxYXInGrid=563
+															LineMaxYXOutOfGrid=8501
+														$end 'CartesianXMarkerLayoutAttribute'
+													$end 'SubMapItem'
+													$begin 'SubMapItem'
+														DataSourceID=47
+														$begin 'CartesianXMarkerLayoutAttribute'
+															TextBoxMaxY=9594
+															TextBoxHeight=331
+															LineMaxYXInGrid=563
+															LineMaxYXOutOfGrid=8501
+														$end 'CartesianXMarkerLayoutAttribute'
+													$end 'SubMapItem'
+												$end 'MainMapItem'
+												$begin 'MainMapItem'
+													$begin 'SubMapItem'
+														DataSourceID=6
+														$begin 'DockableOverlayLayoutAttribute'
+															$begin 'Dock_0'
+																$begin 'OverlayLayoutAttribute'
+																	$begin 'BoundingRect'
+																		Top=4850
+																		Left=528
+																		Bottom=9850
+																		Right=8028
+																	$end 'BoundingRect'
+																	ModifySize=false
+																	ModifyPosition=false
+																$end 'OverlayLayoutAttribute'
+															$end 'Dock_0'
+															$begin 'Dock_1'
+																$begin 'OverlayLayoutAttribute'
+																	$begin 'BoundingRect'
+																		Top=5000
+																		Left=0
+																		Bottom=10000
+																		Right=10000
+																	$end 'BoundingRect'
+																	ModifySize=false
+																	ModifyPosition=false
+																$end 'OverlayLayoutAttribute'
+															$end 'Dock_1'
+															$begin 'Dock_2'
+																$begin 'OverlayLayoutAttribute'
+																	$begin 'BoundingRect'
+																		Top=0
+																		Left=0
+																		Bottom=5000
+																		Right=10000
+																	$end 'BoundingRect'
+																	ModifySize=false
+																	ModifyPosition=false
+																$end 'OverlayLayoutAttribute'
+															$end 'Dock_2'
+														$end 'DockableOverlayLayoutAttribute'
+													$end 'SubMapItem'
+												$end 'MainMapItem'
+												$begin 'MainMapItem'
+													$begin 'SubMapItem'
+														DataSourceID=30
+														$begin 'OverlayLayoutAttribute'
+															$begin 'BoundingRect'
+																Top=75
+																Left=75
+																Bottom=4075
+																Right=4075
+															$end 'BoundingRect'
+															ModifySize=false
+															ModifyPosition=false
+														$end 'OverlayLayoutAttribute'
+													$end 'SubMapItem'
+													$begin 'SubMapItem'
+														DataSourceID=32
+														$begin 'OverlayLayoutAttribute'
+															$begin 'BoundingRect'
+																Top=150
+																Left=5850
+																Bottom=4150
+																Right=9850
+															$end 'BoundingRect'
+															ModifySize=false
+															ModifyPosition=false
+														$end 'OverlayLayoutAttribute'
+													$end 'SubMapItem'
+												$end 'MainMapItem'
+											$end 'PlotAttributeStoreMap'
+											PlotType=1
+										$end 'MapItem'
+									$end 'PerViewPlotAttributeStoreMap'
+									IsViewAttribServer=false
+									ViewID=-1
+									$begin 'SourceIDMap'
+										IDMapItem(0, 0, -1, 21)
+									$end 'SourceIDMap'
+									$begin 'TraceCharacteristicsMgr'
+									$end 'TraceCharacteristicsMgr'
+									$begin 'CartesianXMarkerManager'
+										RefMarkerID=-1
+										CurrentMarkerID=-1
+										$begin 'ReferenceCurves'
+										$end 'ReferenceCurves'
+									$end 'CartesianXMarkerManager'
+									$begin 'CartesianYMarkerManager'
+									$end 'CartesianYMarkerManager'
+									$begin 'ViewRecordExpansion'
+										ExpMap(21, true)
+										ViewID=20
+									$end 'ViewRecordExpansion'
+									XAxisStackID=-1
+									$begin 'AllTransSrcDwg'
+										$begin 'PT'
+											ID=1
+											TransSrcDwg(-1, 0, 19, 1, 15, 2, 16, 5, 6, 11, 12, 21, 22, 23, 26, 24, 27, 25, 28, 29, 30, 31, 32, 37, 38, 39, 40)
+										$end 'PT'
+									$end 'AllTransSrcDwg'
+									$begin 'AllPtSVID'
+										PtID(1, -1, 4)
+									$end 'AllPtSVID'
+								$end 'PlotDisplayDataManager'
+							$end 'Report2D'
+						$end 'XY Plot 1'
+						$begin '3D Polar Plot 1'
+							ReportID=3
+							$begin 'Report3D'
+								name='3D Polar Plot 1'
+								ReportID=3
+								hasWindowBeenOpened=false
+								ReportType=3
+								DisplayType=7
+								$begin 'Graph3DsV2'
+									$begin 'Graph3DV2'
+										TraceDefID=2
+										GraphName='dB(GainTotal)'
+										$begin 'Graph3DV2TraceSettings'
+											IsoValType='Tone'
+											TraceType='Surface'
+											SmoothShade=true
+											Filled=true
+											Transparency=0
+											AddGrid=false
+											MapColor=false
+											CurveLineStyle=4
+											CurveLineWidth=5
+											CurveMarkStyle=9
+											CurveMarkSize=5
+											GridColor(102, 102, 102)
+											$begin 'OutlineID'
+												AddOutLine=false
+												Width=4
+												Style='Solid'
+												'Outline color'(191, 191, 191)
+											$end 'OutlineID'
+										$end 'Graph3DV2TraceSettings'
+									$end 'Graph3DV2'
+								$end 'Graph3DsV2'
+								$begin 'PolarReport3DSettings'
+									'Real time mode'=true
+									$begin 'ColorMapSettings'
+										ColorMapType='Spectrum'
+										SpectrumType='Rainbow'
+										UniformColor(127, 255, 255)
+										RampColor(255, 127, 127)
+									$end 'ColorMapSettings'
+									$begin 'LabelsSettings'
+										ShowTitle=false
+										TitleText=''
+										ShowAxes=true
+										SpecifyTitle=false
+										SpecifyLabel=false
+										X_Label='X'
+										Y_Label='Y'
+										Z_Label='Z'
+									$end 'LabelsSettings'
+									$begin 'Scale3DSettings'
+										unit=90
+										m_nLevels=15
+										minvalue=-44.6757845158735
+										maxvalue=9.3914033953037
+										log=false
+										IntrinsicMin=-44.6757845158735
+										IntrinsicMax=9.3914033953037
+										LimitFieldValuePrecision=false
+										FieldValuePrecisionDigits=4
+										ScaleType=0
+										UserSpecifyValues(15, 0, 0.0714285746216774, 0.142857149243355, 0.214285731315613, 0.28571429848671, 0.357142865657806, 0.428571462631226, 0.5, 0.571428596973419, 0.642857193946838, 0.714285731315613, 0.785714328289032, 0.857142925262451, 0.928571462631226, 1)
+									$end 'Scale3DSettings'
+									$begin 'zAxes'
+										MajorTicksNum=11
+										MinorTicksNum=5
+										DisplayMajor=true
+										DisplayMinor=false
+									$end 'zAxes'
+								$end 'PolarReport3DSettings'
+							$end 'Report3D'
+						$end '3D Polar Plot 1'
+					$end 'Reports'
+					$begin 'ReportsWindowInfoList'
+						$begin 'XY Plot 1'
+							ReportID=1
+							$begin 'WindowInfoList'
+								$begin 'Report2D'
+								$end 'Report2D'
+							$end 'WindowInfoList'
+						$end 'XY Plot 1'
+						$begin '3D Polar Plot 1'
+							ReportID=3
+							$begin 'WindowInfoList'
+								R3DWindowPos(Editor3d(View(WindowPos(3, -1, -1, -8, -31, 104, 104, 1329, 430), OrientationMatrix(-0.155902400612831, -0.25, 0.395284742116928, 0, 0.467707216739655, -0.0833333358168602, 0.131761580705643, 0, 0, 0.416666686534882, 0.263523191213608, 0, 0, 2.38418579101563e-007, -5.74868392944336, 1, 0, -2.90265488624573, 2.90265488624573, -1, 1, 0.625207901000977, 10.8721599578857), Drawings[1: 'dB(GainTotal)'])))
+							$end 'WindowInfoList'
+						$end '3D Polar Plot 1'
+					$end 'ReportsWindowInfoList'
+				$end 'ReportSetup'
+				$begin 'Properties'
+				$end 'Properties'
+				$begin 'UserDefinedDocument'
+					$begin 'Data'
+					$end 'Data'
+				$end 'UserDefinedDocument'
+			$end 'HfssDesignInstance'
+		$end 'Instance'
+	$end 'DataInstances'
+	$begin 'WBSystemIDToDesignInstanceIDMap'
+	$end 'WBSystemIDToDesignInstanceIDMap'
+	$begin 'WBSysIDSysDetails'
+	$end 'WBSysIDSysDetails'
+	$begin 'WBConnIDConnDetails'
+	$end 'WBConnIDConnDetails'
+$end 'AnsoftProject'
+$begin 'ProjectPreview'
+	Thumbnail64='/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQE\
+BAQICAQECAQEBAgICAgICAgICAQICAgICAgICAgL/2wBDAQEBAQEBAQEBAQECAQEBAgICAgICAgICAg\
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgL/wAARCABgAGADASIAAhEBAxEB/\
+8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQR\
+BRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUp\
+TVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5us\
+LDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAA\
+AECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHB\
+CSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ\
+3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4u\
+Pk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD+/iiiigAoor5M+Lf7TWreG/Fmp/C/4JfDF/jZ8\
+TdBSwHjG41Dxrpnw5+Dnwpv9TsLHxFpHh/4s/En+ytb1bT/ABdqXg+4bULDRvC/hPxdq1pHqvh+88U2\
+Xhjw94p0LxBd70MPWxM/Z0Y80krttxjGKuleUpNRirtK8mk5NRWrSabUVdux9Z0V+aOpXn7Z/wAUi0n\
+i742+Dv2atCuDPcW3hD9mXwjonxD+IGkXcWNOtrHWf2gP2i/COpaP418NXNmbzUJobD4R+EdVs727sr\
+ODWri10u7n1/nG/Zf8M3ZN14g+Mf7YfiHXrr/SNb1//htz9rTwd/bmrzjzdS1j/hEPhj8Y9C8NeFftN\
+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\
+jFXtGMVoldtu2rk3KTcpNvRJRVkFFFFYDP/Z'
+	$begin 'DesignInfo'
+		DesignName='HFSSDesign2'
+		Notes=''
+		Factory='HFSS'
+		IsSolved=true
+		'Nominal Setups'[1: 'Setup1']
+		'Optimetrics Setups'[0:]
+		'Optimetrics Experiment Types'[0:]
+		Image64='/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQE\
+BAQICAQECAQEBAgICAgICAgICAQICAgICAgICAgL/2wBDAQEBAQEBAQEBAQECAQEBAgICAgICAgICAg\
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgL/wAARCADIAMgDASIAAhEBAxEB/\
+8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQR\
+BRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUp\
+TVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5us\
+LDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAA\
+AECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHB\
+CSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ\
+3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4u\
+Pk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD+/iiiigAooooAKKKKACiiigAooooAKKKKACiii\
+gAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAorH8ReIvD/hDw/rvizxZruj+F/Cvh\
+fR9T8ReJvE3iLU7LRPD/AId8P6JZT6lrOu67rOpTxW2kaPaadbXNxdXVxJHBbwW7yyukaMw+EvEP7Q/\
+xa+OKnSP2fdF8V/BDwG24av8AHn40/Cq50rxl4k0y7hGmXemfAv4G+O9X07XPBfjGxvW12RvEnxP8MW\
++kWF74c0qTTfAXxI8O+IZdT0jrw2DrYq7hanShpKpO6hF9rpNuTWqhFSm0m1FpNqZSUd9306n098YP2\
+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'
+	$end 'DesignInfo'
+$end 'ProjectPreview'
